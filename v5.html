@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta property="og:type"  content="website" />
+    <meta property="og:url"   content="//pravocardsanbox.celestra.ru/account/index.html" />
+    <meta property="og:title" content="Личный кабинет"/>
+    <meta property="og:description" content=""/>
+
+    <meta property="og:image" content="https://pravosites.ru/uploads/files/2020/04/10/rmt7804432341973383677.png"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
+    <title>Новое обращение</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/vars.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- required JavaScript polyfills for IE11 -->
+    <script nomodule crossorigin="anonymous"
+    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"></script>
+  <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script>');</script>
+
+
+
+  <style>
+    nav ul {padding: 0;margin: 0;}
+    @media (min-width: 992px) {
+        nav {margin-left: 0;}
+        .content {margin-right: 288px; width: auto; }
+        .container {width: 990px;}
+        .nav-wrapper {width: 288px;}
+    }
+  </style>
+</head>
+<body>
+    <header class="fixed-top bg-white d-flex py-3 d-flex justify-content-center align-items-center ">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto px-4">
+                    <a href="#"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="d-flex col-auto align-items-center  px-4">
+                    <a href="#" class=" d-none d-lg-inline me-2 btn btn-transparent text-decoration-none text-secondary fw-bold">
+                        Мои обращения
+                    </a>
+                    <div class="dropdown ms-4">
+                        <button class=" dropdown-toggle  btn btn-transparent text-secondary d-flex justify-content-center align-items-center btn-name text-truncate"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="rounded-circle bg-light d-flex justify-content-center align-items-center " style="width: 2rem; height: 2rem;" >А</div>
+                            <span class=" d-none d-lg-inline ps-2 fw-bold text-truncate">Александр Александр</span>
+                            <i class="ms-2 d-lg-none bi bi-chevron-down text-muted"></i>
+                        </button>
+                        <ul class="dropdown-menu mt-3 w-100" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item border-bottom text-secondary d-flex justify-content-between" href="#"> <span class="fw-600"> 0 ₽ </span><i class="text-muted  bi bi-plus-square-fill"></i></a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Кабинет</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="min-vh-100 d-flex justify-content-center">
+        <div class="container pt-lg-2 mt-6 px-0">
+                <div class="position-relative float-lg-end nav-wrapper">
+                    <nav class="px-4 pt-lg-4 bg-white position-fixed">
+                        <ul class="list-unstyled">
+                            <li class="w-100">
+                                <span class="btn btn-transparent active w-100 text-start p-3 fw-bold d-flex justify-content-between align-items-center">
+                                    Новое обращение  
+                                    <span class="text-warning progress-steps progress-step-0"></span>
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="px-0 mt-5 mt-lg-0 content  h-100">
+                    <form action="" method="post" class="  h-100 float-lg-start position-relative w-100" >
+                        <div class=" d-flex flex-column  h-100 content-appeal ">
+                            <div class="d-flex flex-wrap align-items-center px-4 pt-lg-4">
+                                <small class="small text-muted">Консультация юриста</small>
+                                <h1 class="w-100 pt-2 h1 fw-600">Коротко опишите проблему</h1>
+                                <p class="w-100 mt-2 text-secondary">Это поможет специалистам быстрее понять, что нужно сделать</p>
+                    
+                                <div class="w-100 d-flex flex-column mt-4 py-2">
+                                    <div class="col input-append btn-group">
+
+                                        <input class="w-100 dropdown-toggle h-100 form-control py-3 position-relative dropdownHint" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" type="text" placeholder="Чем помочь?" aria-label="Search">
+                                        <i class="bi bi-search d-lg-none position-absolute text-muted"></i>
+
+                                        <ul class="w-100 dropdown-menu hint" style="margin-top: 55px;">
+                                            <li><button type="button" class="w-100 dropdown-item text-secondary d-flex justify-content-between "><p><span class="fw-600">Договор</span> трудовой</p> <i class="bi bi-chevron-right"></i></button></li>
+                                            <li><button type="button" class="w-100 dropdown-item text-secondary d-flex justify-content-between "><p><span class="fw-600">Договор</span> купли-продажи квартиры</p> <i class="bi bi-chevron-right"></i></button></li>
+                                            <li><button type="button" class="w-100 dropdown-item text-secondary d-flex justify-content-between "><p><span class="fw-600">Договор</span> купли-продажи авто</p> <i class="bi bi-chevron-right"></i></button></li>
+                                            <li><button type="button" class="w-100 dropdown-item text-secondary d-flex justify-content-between "><p><span class="fw-600">Договор</span> купли-продажи</p> <i class="bi bi-chevron-right"></i></button></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-12 hint">
+                                        <button class="btn btn-light mt-3" type="button">купли-продажи</button>
+                                        <button class="btn btn-light mt-3" type="button">продажи</button>
+                                        <button class="btn btn-light mt-3" type="button">авто</button>
+                                        <button class="btn btn-light mt-3" type="button">автомобиля</button>
+                                        <button class="btn btn-light mt-3" type="button">доли</button>
+                                        <button class="btn btn-light mt-3" type="button">машины</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between mt-auto mb-4 px-4 pt-4">
+                                <div class="col-auto">
+                                    <button class="btn btn-lg btn-light fs-6 btn-back"><i class="bi bi-arrow-left me-2"></i><span class="d-none d-md-inline">Назад</span></button>
+                                </div>
+                                <div class="col col-md-auto ms-3 ms-md-0">
+                                    <button class="w-100 btn btn-lg btn-dark fs-6 btn-next">Продолжить<i class="bi bi-arrow-right ms-2"></i></button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class=" d-flex flex-column h-100 d-none content-appeal">
+                            <div class="d-flex flex-wrap align-items-center px-4 pt-lg-4">
+                                <small class="small text-muted">Консультация юриста</small>
+                                <h1 class="w-100 pt-2 h1 fw-600">Опишите ситуацию</h1>
+                                <p class="w-100 mt-2 text-secondary">Важные детали для специалиста</p>
+                                <div class="w-100 d-flex flex-wrap mt-4 py-2">
+                                    <textarea class="form-control" rows="5"></textarea>
+                                </div>
+                                <p class="w-100 mt-3 text-secondary">Загрузите фото или документы. Так специалисты лучше поймут вопрос</p>
+
+                                <div class="w-100 form-control form-file mt-4 px-4 position-relative d-flex align-items-center overflow-hidden">
+                                    <input type="file" class="col-12 form-file-input position-absolute" id="customFileLg">
+                                    <label class="form-control-plaintext w-75" for="customFileLg">
+                                        Добавить фото или докумет
+                                    </label>
+                                    <span class="text-end w-25">
+                                        <i class="bi bi-plus-lg text-muted"></i>
+                                    </span>
+                                </div>
+
+                            </div>
+                            <div class="d-flex justify-content-between mt-auto px-4 mb-4 pt-4">
+                                <div class="col-auto">
+                                    <button class="btn btn-lg btn-light fs-6 btn-prev"><i class="bi bi-arrow-left me-2"></i><span class="d-none d-md-inline">Назад</span></button>
+                                </div>
+                                <div class="col col-md-auto ms-3 ms-md-0">
+                                    <button class="w-100 btn btn-lg btn-dark fs-6  btn-next">Продолжить<i class="bi bi-arrow-right ms-2"></i></button>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class=" d-flex flex-column h-100 d-none content-appeal">
+                            <div class="d-flex flex-wrap align-items-center px-4 pt-lg-4 ">
+                                <small class="small text-muted">Консультация юриста</small>
+                                <h1 class="w-100 pt-2 h1 fw-600">Как с вами связаться?</h1>
+                                <p class="w-100 mt-2 text-secondary">Выберите удобный способ общения со специалистом</p>
+                                
+                                <div class="w-100 my-4 pt-2 d-flex flex-wrap ">
+                                    <div class="col-12 col-lg ">
+                                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="btnAnswerLk" checked>
+                                        <label class="form-check-label w-100 btn btn-outline border fw-bold p-4 fs-6  d-flex align-items-center justify-content-center" for="btnAnswerLk">
+                                                <i class="bi bi-chat-left-text-fill text-muted me-2"></i>
+                                                Ответ в личном кабинете
+                                        </label>
+                                    </div>
+                                    <div class="col-12 col-lg answer__tel mt-2 mt-lg-0">
+                                        <input class="form-check-input d-none" type="radio" name="flexRadioDefault" id="btnAnswerTel">
+                                        <label class="form-check-label w-100 btn btn-outline border fw-bold p-4 fs-6 d-flex align-items-center justify-content-center" for="btnAnswerTel">
+                                                <i class="bi bi-telephone-fill text-muted me-2"></i>
+                                                По телефону
+                                        </label>
+                                    </div>
+                                </div>
+                                <p class="w-100 p-2 text-secondary bg-light"><i class="bi bi-exclamation-circle-fill text-muted mx-2"></i>
+                                    Ответ в течение <span id="hoursAnswer">48</span> часов с момента оплаты
+                                </p>
+
+                            </div>
+                            <div class="d-flex justify-content-between mt-auto px-4 mb-4 pt-4">
+                                <div class="col-auto">
+                                    <button class="btn btn-lg btn-light fs-6 btn-prev"><i class="bi bi-arrow-left me-2"></i><span class="d-none d-md-inline">Назад</span></button>
+                                </div>
+                                <div class="col col-md-auto ms-3 ms-md-0">
+                                    <button class="w-100 btn btn-lg btn-dark fs-6  btn-next">К оформлению<i class="bi bi-arrow-right ms-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class=" d-flex flex-column h-100 d-none content-appeal ">
+                            <div class="d-flex flex-column align-items-center bg-light ">
+                                <div class="w-100 pt-lg-4 bg-white px-4 ">
+                                    <small class="small text-muted">Консультация юриста</small>
+                                    <h1 class="col-12 pt-2 h1 fw-600">Подтверждение заявки</h1>
+                                    <h4 class="h4 mt-3">Покупка квартиры</h4>
+                                    <p class="mt-3">
+                                        Планируем покупать квартиру в ипотеку, хозяева приобретали ее с мат капиталом , детям доли не выделили, хотят переоформить на мать свою , будут ли у нас проблемы с приобретением такой квартиры? я так понимаю они покупают дом, но и там не хотят выделять доли детям
+                                    </p>
+                                    <p class="fw-bold mt-4 border-top py-4">Фото или документы:</p>
+                                </div>
+
+                                <div class="w-100 mt-3 bg-white py-4 px-4 ">
+                                        <h4 class="h4">Способ связи</h4>
+                                        <p class="w-100 p-2 mt-3">    
+                                            <i class="bi bi-chat-left-text-fill mx-1"></i>
+                                            Ответ в личном кабинете
+                                        </p>
+                                        <p class="w-100 p-2 mt-3 text-secondary bg-light">
+                                            <i class="bi bi-exclamation-circle-fill text-muted mx-1"></i>
+                                            Ответ в течение <span id="hoursAnswer">48</span> часов с момента оплаты
+                                        </p>
+                                    </div>
+
+                                <div class="w-100 mt-3 bg-white py-4 px-4">
+                                        <h4 class="col h4">Способ оплаты</h4>
+
+                                        <div class="col-lg-6  mt-3 pe-2">
+                                            <select class="form-select " aria-label="Default select example">
+                                                <option selected>Картой онлайн</option>
+                                                <option value="1">Списать с баланса</option>
+                                            </select>
+                                        </div>
+                                        <div class="col row g-3 mt-1">
+                                            <div class="col-sm-6 position-relative">
+                                                <input type="text" id="summ" class="form-control pt-4 pb-2 bg-white">
+                                                <label for="summ" class="placeholder-fake">Сумма списанния</label>
+                                            </div>
+                                            <div class="col-sm-6 position-relative">
+                                                <input type="text" id="" class="form-control pt-4 pb-2 bg-light border-light balance fw-bold" value="500" placeholder="Доступно" readonly>
+                                                <div class="placeholder-fake">Доступно</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <div class="w-100 mt-3 bg-white py-4 px-4 ">
+                                    <h4 class="h4">К оплате</h4>
+                                    <div class="row gx-3 my-3">
+                                        <div class="col-7 col-sm-9">
+                                            <input type="text" id="" class="form-control " placeholder="Промокод" required>
+                                        </div>
+                                        <div class="col-5 col-sm-3">
+                                            <button class="w-100 btn btn-light fs-6 fw-bold">Применить</button>
+                                    </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="col-auto">Консультация юриста (1)</div>
+                                        <div class="col text-end">990 ₽</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <div class="col-auto">Спишется с баланса</div>
+                                        <div class="col text-end">-500 ₽</div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <div class="col fs-5 fw-600">Итого:</div>
+                                        <div class="col fs-5 fw-600 text-end">490 ₽</div>
+                                    </div>
+                                </div>
+
+                                <div class="w-100 mt-3 bg-white py-4 px-4">
+                                    <h4 class="w-100 h4">Сертификат</h4>
+            
+                                    <div class="row g-3 my-1 align-items-center">
+                                        <div class="col-lg-6">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>ПК402345006</option>
+                                                <option value="1">Списать с баланса</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 text-secondary">
+                                            Услуга будет списанна с сертификата
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <div class="w-100 mt-3 bg-white py-4 px-4">
+                                    <h4 class="h4">Услуга</h4>
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <div class="col-auto">Консультация юриста (1)</div>
+                                        <div class="col text-end">-1</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between mt-auto bg-white py-4 px-4 ">
+                                <div class="col-auto">
+                                    <button class="btn btn-lg btn-light fs-6 btn-prev"><i class="bi bi-arrow-left me-2"></i>Назад</button>
+                                </div>
+                                <div class="col col-md-auto ms-3 ms-md-0">
+                                    <button class="w-100 btn btn-lg btn-warning text-white px-md-5 fs-6 btn-next">Оплатить</button>
+                                </div>
+                            </div>
+
+                            <footer class="px-4 bg-light">
+                                <p class="small text-secondary d-flex align-items-center justify-content-center">
+                                    <img src="../images/icon-check.svg" alt="" class="me-1">
+                                    Безопасное оформление заказа
+                                </p>
+                                <p class="small text-center text-muted mt-2">Нажимая кнопку «Оплатить», вы соглашаетесь с условиями использования сервиса ПРАВОКАРД</p>
+                            </footer>
+
+                        </div>
+
+                        <div class=" d-flex flex-column h-100 d-none content-appeal bg-light">
+                            <div class="d-flex flex-wrap align-items-center px-4 pt-2 pt-lg-4 bg-white">
+                                <h1 class="w-100 h1 fw-600">Заявка принята. Спасибо!</h1>
+                                <p class="text-secondary">
+                                    Отслеживать статус и управлять обращением удобнее в мобильном приложении
+                                </p>
+                            </div>
+                            <div class="stores py-4 px-4 bg-white w-100 d-flex flex-wrap">
+                                <a target="_blank" href="https://apps.apple.com/ru/app/%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D0%BA%D0%B0%D1%80%D0%B4-%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D0%B8/id1527720587" class="col-12 col-lg-auto link-store me-lg-2"> <img src="../images/appStores.svg" alt=""></a>
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=pravocard.consultations.infotask" class="col-12 col-lg-auto mt-3 mt-lg-0 ms-lg-2 link-store"><img src="../images/googleStore.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>     
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+
+.fw-bold {
+    font-weight: 500 !important;
+}
+.btn-warning {
+    background-color: #FF640D !important;
+    border-color: #FF640D !important;
+}
+.btn-warning:hover {
+    background-color: #FF833D !important;
+    border-color: #FF833D !important;
+}
+
+.btn-transparent:hover, .btn-transparent:active,.btn-transparent.active {
+    background-color: #F7F7F7 !important;
+    border-color: #F7F7F7 !important;
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.btn-outline {
+    height: 96px;
+}
+
+.btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active, .btn-outline:focus:not(:focus-visible){
+    border:  1px solid #FF640D !important;
+    box-shadow: inset 0 0 0 1px #FF640D !important;
+}
+
+.bg-danger {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #E92C2C !important;
+}
+
+.bg-secondary {
+    background: #969696 !important;
+}
+
+.bg-warning {
+    background-color: #FF640D !important;
+    border-color: #FF640D !important;
+}
+
+
+.btn-light {
+    background-color: rgb(247, 247, 247);
+    border-color: #F7F7F7;
+}
+
+.btn-light:hover {
+    background-color: #dedede;
+    border-color: #dedede;
+}
+
+.link-warning {
+    color: #FF640D !important;
+}
+
+.link-warning:hover {
+    border-bottom: 1px solid #FF640D ;
+}
+
+.text-warning {
+    color: #FF640D !important;
+}
+
+.link-secondary {
+    color: #585757 !important;
+}
+
+.link-secondary:hover, .link-dark:hover {
+    color: #000 !important;
+}
+
+.text-secondary {
+    color: #585757 !important;
+}
+
+.text-muted {
+    color: #969696 !important;
+}
+
+.text-success {
+    color: rgba(0, 186, 52, 1)  !important;
+}
+
+.bg-sucess { background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #00BA34 !important;}
+
+.form-check-input:checked {
+    background-color: #FF640D;
+    border-color: #FF640D;
+}
+
+.tooltip-inner {
+    background: #E8E8E8;
+    color: black;
+}
+.bs-tooltip-top .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
+    border-top-color: #E8E8E8;
+
+}
+
+.btn-reg, .btn-auth {
+    border-radius: 0 !important;
+}
+
+.btn-reg:hover, .btn-auth:hover,
+.btn-reg.active, .btn-auth.active {
+    border-bottom: 2px solid #FF640D  !important;
+     color: #FF640D  !important;
+}
+
+.active {
+    border-bottom: 2px solid #FF640D  !important;
+    cursor: pointer;
+}
+
+.active a {
+    color: #FF640D  !important;
+}
+
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #FF640D !important;
+    box-shadow: inset 0 0 0 1px #ff640d !important;
+}
+
+input.balance:focus {
+    border: 1px solid #E8E8E8 !important;
+    box-shadow: none !important;
+}
+
+.border-warning {
+    border: 2px solid #FF640D !important;
+}
