@@ -1,123 +1,335 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <meta property="og:type"  content="website" />
-    <meta property="og:url"   content="" />
-    <meta property="og:title" content="Личный кабинет"/>
-    <meta property="og:description" content=""/>
-
-    <meta property="og:image" content="https://pravosites.ru/uploads/files/2020/04/10/rmt7804432341973383677.png"/>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
-    <title>Вход</title>
-
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
-
-    <link rel="stylesheet" href="/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polair</title>
+    <link rel="preload" href="GolosText-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/vars.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <!-- required JavaScript polyfills for IE11 -->
-    <script nomodule crossorigin="anonymous"
-    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"></script>
-  <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script>');</script>
-
 </head>
 <body>
-
-    <header class="fixed-top bg-white d-flex py-3 d-flex justify-content-center ">
-        <div class="col-12 col-lg-10 col-xl-8 px-4 d-flex justify-content-between align-items-center ">
-            <div class="col-auto">
-                <a href="#"><img src="/images/logo.svg" alt=""></a>
-            </div>
-            <div class="col-auto" style="font-weight: 500;">
-                <a href="tel:88005559437" class="link-secondary text-decoration-none">
-                    <span class="d-none d-md-block fw-bold">8 (800) 000-00-00</span>
-                    <i class="bi bi-telephone-fill d-md-none"></i>
-                </a>
-            </div>
-        </div>
-    </header>
-    <div class="min-vh-100 d-flex justify-content-center align-items-center bg-gray-50">
-        
-        <div class="col-12 col-lg-10 col-xl-8  px-4 d-flex justify-content-center align-items-center">
-           
-        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center vh-100 ">  
-            <div class="" style="height: 64px;"></div>
-            
-            <form  class="col-lg-9 needs-validation" novalidate="">
-                <div class="mb-4">
-                    <h3 class="h3 mb-2">Установка пароля</h3>
-                    <p class="text-secondary">Придумайте новый надежный пароль</p>
-                </div>
-
-                <div class="mb-4 pb-1 password">
-                    <input type="password" id="password-input" class="form-control pt-4 pb-2" required="" >
-                    <label for="password-input" class="placeholder-fake">Пароль</label>
-                    <a href="#" class="link-secondary password-control position-absolute text-decoration-none">
-                        <i class="bi bi-eye-fill"></i>
-                    </a>
-                    <div class="password-tooltip p-4 small bg-white d-none">
-                        <h5>Требования к паролю:</h5>
-                        <ul class="ps-4">
-                            <li class="text-secondary">от 8 до 16 символов</li>
-                            <li class="text-secondary">прописные и строчные латинские буквы</li>
-                            <li class="text-secondary">хотя бы одна цифра</li>
-                        </ul>
-                        <p class="password-tooltip--text fw-bold">Ненадежный пароль</p>
-                        <div class="password-line d-flex justify-content-between mt-3 mb-lg-3">
-                            <div class="bg-danger"></div>
-                            <div class="bg-secondary"></div>
-                            <div class="bg-secondary"></div>
+    <header>
+            <div class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <img src="/img/Polair_logo.svg" alt="Логотип Polair">
+                            <p class="header__logo-text">Профессиональное оборудование для предприятий общественного&nbsp;питания и торговли</p>
                         </div>
-
-                        <p class="d-none d-lg-block text-secondary">Не используйте пароли, используемые для других сайтов, и пароли которые можно легко подобрать.</p>
+                        <div class="header__menu">
+                            <a href="#" class="header__menu-link"><img src="/img/icon-msg.svg" alt=""> Обратная связь</a>
+                            <a href="#" class="header__menu-link link-lang">Eng</a>
+                            <form action="" class="header__search-form">
+                                <input type="">
+                                <a href="#"><img src="/img/icon-search.svg" alt=""> </a>
+                            </form>
+                            <a href="#" class="header__menu-link menu-burger"><img src="/img/icon-burg.svg" alt=""></a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="mb-4 pb-1 password">
-                    <input type="password" id="password-input" class="form-control pt-4 pb-2"  required="" >
-                    <label for="password-input" class="placeholder-fake">Повторите пароль</label>
-                    <a href="#" class="link-secondary password-control position-absolute text-decoration-none">
-                        <i class="bi bi-eye-fill"></i>
+            </div>
+            <div class="container">
+                <div class="header__nav">
+                    <a href="#" class="header__nav-link">Продукция <img src="/img/icon-arrow.svg" alt=""></a>
+                    <a href="#" class="header__nav-link">Где купить</a>
+                    <a href="#" class="header__nav-link">Сервис и поддержка <img src="/img/icon-arrow.svg" alt=""></a>
+                    <a href="#" class="header__nav-link">Решения</a>
+                    <a href="#" class="header__nav-link">О компании</a>
+                    <a href="#" class="header__nav-link">Медиа</a>
+                    <a href="#" class="header__nav-link">Новости</a>
+                    <a href="#" class="header__nav-link">Контакты</a>
+                </div>
+            </div>
+    </header>
+    <div class="intro">
+        <div class="container">
+            <div class="wrapper intro-wrapper">
+                <div class="intro__item">
+                    <div class="wrapper intro__icons-wrapper">
+                        <img class="intro__icon" src="/img/icon-intro1.svg" alt="">
+                        <img class="intro__icon" src="/img/icon-intro2.svg" alt="">
+                        <img class="intro__icon" src="/img/icon-intro3.svg" alt="">
+                        <img class="intro__icon" src="/img/icon-intro4.svg" alt="">
+                    </div>
+                    <h2 class="intro__title">Специальные цены на популярные модели фармацевтических шкафов</h2>
+                    <p  class="intro__text">Снижаем цены ради высоких возможностей</p>
+                    <a href="#" class="intro__btn">Подробнее</a>
+                </div>
+                <div class="intro__item bg-blue">
+                    <img class="intro__img" src="/img/img-main.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="container">
+            <div class="wrapper">
+                <div class="nav__header">
+                    <h3 class="title">Продукция</h3>
+                    <a href="#" class="nav__header-link">Перейти в каталог <img src="/img/icon-arrow.svg" alt=""></a>
+                </div>
+                <div class="nav__list-wrapper">
+                    <div class="nav__list">
+                        <a href="#" class="nav__list-link">Решения для Dark Store</a>
+                        <a href="#" class="nav__list-link">Шкафы холодильные</a>
+                        <a href="#" class="nav__list-link">Шоковая заморозка</a>
+                        <a href="#" class="nav__list-link">Шкафы для вызревания</a>
+                    </div>
+                    <div class="nav__list">
+                        <a href="#" class="nav__list-link">Шкафы медицинские</a>
+                        <a href="#" class="nav__list-link">Оборудование для пекарен</a>
+                        <a href="#" class="nav__list-link">Барные столы и шкафы</a>
+                        <a href="#" class="nav__list-link">Столы холодильные</a>
+                    </div>
+                    <div class="nav__list">
+                        <a href="#" class="nav__list-link">Машины холодильные</a>
+                        <a href="#" class="nav__list-link">Камеры холодильные</a>
+                        <a href="#" class="nav__list-link">Лари морозильные</a>
+                        <a href="#" class="nav__list-link">Оборудование для магазиностроения</a>
+                    </div>
+                    <div class="nav__list">
+                        <a href="#" class="nav__list-link">Модульные стеллажные системы</a>
+                        <a href="#" class="nav__list-link">Продуктоматы iCell</a>
+                        <a href="#" class="nav__list-link">Термоконтейнеры FoodLine</a>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <p class="about__text">
+                Компания Polair™ — крупнейший российский производитель профессионального холодильного оборудования с широким ассортиментом и покупателями более чем в 20 странах.
+            </p>
+            <div class="about__items-wrapper">
+                <div class="about__item">
+                    <span>>200 </span><span class="about__item-small">млн $</span>
+                    <p>годовой оборот группы</p>
+                </div>
+                <div class="about__item">
+                    <span>~2 650</span>
+                    <p>численность сотрудников</p>
+                </div>
+                <div class="about__item">
+                    <span>~180 </span><span class="about__item-small">тыс м<sup>2</sup></span>
+                    <p>производственные площади</p>
+                </div>
+                <div class="about__item">
+                    <span>>20</span>
+                    <p>стран в географии продаж</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="standart">
+        <div class="container">
+            <div class="wrapper">
+                <div class="standart__item standart__item-img">
+                    <img src="/img/img-bg-standart.jpg" alt="Изображение ягоды">
+                </div>
+                <div class="standart__item">
+                    <div class="standart__details">
+                        <span class="standart__subtitle">о группе компаний</span>
+                        <h3 class="title">Высокие стандарты <br> качества</h3>
+                        <p class="standart__text">Продукция Polair™ проходит 100% сквозной контроль качества и использует экологичные технологии производства.</p>
+                        <a href="#" class="standart__link">Больше о нас <img src="/img/icon-arrow.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <div class="wrapper catalog__wrapper">
+                    <div class="catalog__item catalog__action">
+                        <span class="catalog__subtitle">Полезные ссылки</span>
+                        <h3 class="title catalog__title">Помощь покупателю</h3>
+                        <p class="catalog__text">Воспользуйтесь нашими конфигураторами холодильного оборудования, чтобы подобрать продукт для вашего бизнеса  </p>
+                    </div>
+                    <div class="catalog__item catalog__list">
+                        <div class="catalog__product">
+                            <img src="/img/product-1.png" alt="Изображение Конфигуратор холодильных столов">
+                            <h6 class="catalog__product-title">Конфигуратор холодильных столов</h6>
+                            <p class="catalog__product-text">Подбор оборудования, совмещающего функции холодильного шкафа и рабочего стола</p>
+                            <a href="#" class="catalog__product-link">Подобрать стол</a>
+                        </div>
+                        <div class="catalog__product">
+                            <img src="/img/product-2.png" alt="Изображение Конфигуратор холодильных машин">
+                            <h6 class="catalog__product-title">Конфигуратор холодильных машин</h6>
+                            <p class="catalog__product-text">Программа по подбору моноблоков или сплит-систем к холодильным камерам Polair</p>
+                            <a href="#" class="catalog__product-link">Подобрать машину</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="container">
+            <div class="news__header">
+                <h3 class="title">Новости</h3>
+                <a href="#" class="news__link">Все новости <img src="/img/icon-arrow.svg" alt=""></a>
+            </div>
+            <div class="news__list wrapper">
+                <div class="news__item">
+                    <a href="#">
+                        <img src="/img/img-news-1.jpg" alt="">
+                        <p class="news__item-info">
+                            <span class="news__item-cat">Новости</span><span class="news__item-date">10.06.2022</span>
+                        </p>
+                        <h6 class="news__item-title">Встречайте обновление фирменного стиля POLAIR</h6>
+                        <p class="news__item-text">В новом визуальном стиле сохраняются узнаваемые элементы, но при этом он стал выглядеть более современно и динамично.</p>
                     </a>
                 </div>
-
-                <div class="mb-4 pb-2">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
-                        <label class="form-check-label" for="flexCheckChecked">Соглашаюсь с <a href="#" class="link-warning text-decoration-none">Условиями использования</a> и <a href="#" class="link-warning text-decoration-none">Политикой обработки персональных данных</a></label>
+                <div class="news__item">
+                    <a href="#">
+                        <img src="/img/img-news-2.jpg" alt="">
+                        <p class="news__item-info">
+                            <span class="news__item-cat">Новости</span><span class="news__item-date">10.06.2022</span>
+                        </p>
+                        <h6 class="news__item-title">Polair Group представляет свой новый бренд Dazzl™</h6>
+                        <p class="news__item-text">Представляем профессиональное холодильное оборудование для ритейла.</p>
+                    </a>
+                </div>
+                <div class="news__item">
+                    <a href="#">
+                        <img src="/img/img-news-3.jpg" alt="">
+                        <p class="news__item-info">
+                            <span class="news__item-cat">Новости</span><span class="news__item-date">10.06.2022</span>
+                        </p>
+                        <h6 class="news__item-title">Встречайте обновление фирменного стиля POLAIR</h6>
+                        <p class="news__item-text">В новом визуальном стиле сохраняются узнаваемые элементы, но при этом он стал выглядеть более современно и динамично.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="download">
+        <div class="container">
+            <div class="download__content">
+                <h3 class="title">Каталог оборудования Polair™ 2021/2022</h3>
+                <p class="download__text">Широкий ассортимент оборудования для предприятий&nbsp;общественного питания и торговли</p>
+                <a href="#" class="download__link">Скачать PDF-каталог</a>
+            </div>
+        </div>
+    </div>
+    <div class="brands">
+        <div class="container">
+            <h3 class="title">Наши бренды</h3>
+            <div class="brands__list">
+                <div class="brands__item"><a href="#" class="brands__item-link">
+                    <img src="./img/logo-brands-1.svg" alt="Логотип бренда">
+                    <p class="brands__item-text">Лидер в производстве профессионального оборудования для торговли, общественного питания и кухни</p>
+                </a></div>
+                <div class="brands__item"><a href="#" class="brands__item-link">
+                    <img src="./img/logo-brands-2.svg" alt="Логотип бренда">
+                    <p class="brands__item-text">Витрины для кондитерских, экспресс кофеен, гастробаров и продуктовых магазинов</p>
+                </a></div>
+                <div class="brands__item"><a href="#" class="brands__item-link">
+                    <img src="./img/logo-brands-3.svg" alt="Логотип бренда">
+                    <p class="brands__item-text">Профессиональное холодильное оборудование для ритейла</p>
+                </a></div>
+                <div class="brands__item"><a href="#" class="brands__item-link">
+                    <img src="./img/logo-brands-4.svg" alt="Логотип бренда">
+                    <p class="brands__item-text">Решения по хранению для медицинских учреждений и организаций</p>
+                </a></div>
+                <div class="brands__item"><a href="#" class="brands__item-link">
+                    <img src="./img/logo-brands-5.svg" alt="Логотип бренда">
+                    <p class="brands__item-text">Профессиональное оборудование для кухни</p>
+                </a></div>
+                <div class="brands__item"><a href="#" class="brands__item-link">
+                    <img src="./img/logo-brands-6.svg" alt="Логотип бренда">
+                    <p class="brands__item-text">Системы стеклянных дверей для холодильного оборудования и стеллажи для ритейла</p>
+                </a></div>
+                <div class="brands__item"><a href="#" class="brands__item-link">
+                    <img src="./img/logo-brands-7.svg" alt="Логотип бренда">
+                    <p class="brands__item-text">Профессиональное оборудование для предприятий торговли и HoReCa</p>
+                </a></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__menu">
+                <div class="wrapper footer__wrapper">
+                    <div class="footer__item">
+                        <a href="#" class="footer__link link__title link__title-products ">Продукция</a>
+                        <a href="#" class="footer__link">Шкафы холодильные</a>
+                        <a href="#" class="footer__link">Столы холодильные</a>
+                        <a href="#" class="footer__link">Камеры холодильные</a>
+                        <a href="#" class="footer__link">Машины холодильные</a>
+                        <a href="#" class="footer__link">Шоковая заморозка</a>
+                        <a href="#" class="footer__link">Лари морозильные</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#" class="footer__link">Модульные стеллажные системы</a>
+                        <a href="#" class="footer__link">Оборудование для пекарен</a>
+                        <a href="#" class="footer__link">Барные столы и шкафы</a>
+                        <a href="#" class="footer__link">Шкафы для вызревания</a>
+                        <a href="#" class="footer__link">Продуктоматы iCell</a>
+                        <a href="#" class="footer__link">Термоконтейнеры FoodLine</a>
+                        <a href="#" class="footer__link">Шкафы медицинские</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#" class="footer__link link__title">Сервис и поддержка</a>
+                        <a href="#" class="footer__link">Найти авторизованный сервисный центр</a>
+                        <a href="#" class="footer__link">Скачайте документы и рекламные материалы</a>
+                        <a href="#" class="footer__link">Найти авторизованный сервисный центр</a>
+                        <a href="#" class="footer__link">Сообщить&nbsp;о&nbsp;неисправности оборудования</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#" class="footer__link link__title">Где купить</a>
+                        <a href="#" class="footer__link link__title">Решения</a>
+                        <a href="#" class="footer__link link__title">О компании</a>
+                        <a href="#" class="footer__link link__title">Медиа</a>
+                        <a href="#" class="footer__link link__title">Новости</a>
+                        <a href="#" class="footer__link link__title">Контакты</a>
                     </div>
                 </div>
 
-                 <div class="mb-4"> 
-                    <button class="w-100 btn btn-lg btn-warning text-white py-3 fs-6 fw-bold ms-2 disabled" type="submit">Продолжить</button>
+                <div class="wrapper wrapper__selection">
+                    <div >
+                        <a href="#" class="footer__link">Подбор холодильного стола Polair™</a>
+                    </div>
+                    <div>
+                        <a href="#" class="footer__link">Подбор холодильной машины Polair™</a>
+                    </div>
                 </div>
-            </form>
-        
+            </div>
         </div>
-
-         
-        <div class="d-none d-lg-block col-6 vh-100"></div>
-              
+            <div class="footer__company">
+                <div class="container">
+                    <div class="footer__company-wrapper">
+                    <div class="company-item">
+                        <img src="/img/Polair-logo-white.svg" alt="">
+                        <p class="copyright">© АО «Полаир-Недвижимость» 2022</p>
+                        <div class="company-links">
+                            <a href="#" class="company-link">Сделано в CULT</a>
+                            <a href="#" class="company-link">Политика конфиденциальности</a>
+                            <a href="#" class="company-link">Карта сайта</a>
+                        </div>
+                    </div>
+                    <div class="company-item">
+                        <div class="company__contacts">
+                            <div class="company-tel">
+                                <a href="tel:+74959376407" >+7 (495) 937-64-07</a>
+                                <span>многоканальный</span>
+                            </div>
+                            <div class="company-social">
+                                <a href="#"><img src="/img/social-icon-1.svg" alt=""></a>
+                                <a href="#"><img src="/img/social-icon-2.svg" alt=""></a>
+                                <a href="#"><img src="/img/social-icon-3.svg" alt=""></a>
+                                <a href="#"><img src="/img/social-icon-4.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <p class="company-adress">119334, город Москва, Ленинский проспект, дом 37, корпус 1, помещение 2-5, этаж 4</p>
+                        <p class="company-about">При использовании материалов сайта ссылка обязательна.</p>
+                        <p class="company-about">Данный интернет-сайт носит исключительно информационный характер, и информация, размещённая на нём, не является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>     
-    <script src="/js/bootstrap.bundle.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/main.js"></script>
+    </footer>
 </body>
 </html>
