@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta property="og:type"  content="website" />
+    <meta property="og:url"   content="//pravocardsanbox.celestra.ru/account/index.html" />
+    <meta property="og:title" content="Личный кабинет"/>
+    <meta property="og:description" content=""/>
+
+    <meta property="og:image" content="https://pravosites.ru/uploads/files/2020/04/10/rmt7804432341973383677.png"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
+    <title>Мои документы</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/vars.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- required JavaScript polyfills for IE11 -->
+    <script nomodule crossorigin="anonymous"
+    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"></script>
+  <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script>');</script>
+
+</head>
+<body>
+    <header class="fixed-top bg-white d-flex py-3 d-flex align-items-center ">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto px-4">
+                    <a href="#"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="d-flex col-auto align-items-center  px-4">
+                    <a href="#" class=" d-none d-lg-inline me-2 btn btn-transparent text-decoration-none text-secondary fw-bold">
+                        Мои обращения
+                    </a>
+                    <div class="dropdown ms-4">
+                        <button class=" dropdown-toggle  btn btn-transparent text-secondary d-flex justify-content-center align-items-center btn-name text-truncate"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="rounded-circle bg-light d-flex justify-content-center align-items-center " style="width: 2rem; height: 2rem;" >А</div>
+                            <span class=" d-none d-lg-inline ps-2 fw-bold text-truncate">Александр Александр</span>
+                            <i class="ms-2 d-lg-none bi bi-chevron-down text-muted"></i>
+                        </button>
+                        <ul class="dropdown-menu mt-3 w-100" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item border-bottom text-secondary d-flex justify-content-between" href="#"> <span class="fw-600"> 0 ₽ </span><i class="text-muted  bi bi-plus-square-fill"></i></a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Кабинет</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="min-vh-100 d-flex">
+        <div class="container pt-lg-2 mt-6">  
+        <div class="row h-100">
+            <nav class="col-12 col-lg-auto px-4 pt-lg-4 bg-white position-fixed  order-lg-2">
+                <ul class="list-unstyled">
+                    <li><a href="profile-personal-info.html"  class="btn btn-transparent w-100 d-flex align-items-center justify-content-lg-start p-3 fw-bold text-muted">Профиль</a></li>
+                    <li><a href="profile-my-documents.html"  class="btn btn-transparent w-100 d-flex align-items-center justify-content-lg-start p-3 fw-bold active">Мои документы</a></li>
+                    <li><a href="#"  class="btn btn-transparent w-100 d-flex align-items-center justify-content-lg-start p-3 fw-bold text-muted">Продукты</a></li>
+                    <li><a href="profile-setting.html"  class="btn btn-transparent w-100 d-flex align-items-center justify-content-lg-start p-3 fw-bold text-muted">Настройки</a></li>
+                </ul>
+            </nav>
+            <div class="col-auto order-lg-1 px-0 mt-5 mt-lg-0 content bg-light">
+                <div class="d-flex flex-column  align-items-center ">
+                    <div class="w-100 bg-white py-lg-4 px-4 pb-lg-0">
+                        <h1 class="mb-0 fw-600 h1">Мои документы</h1>
+                    </div>
+
+                    <div class="mb-3 py-4 px-4 bg-white w-100">
+                        <h3 class="h3 mb-4">Паспорт</h3>
+                        <div class="row g-4 ">
+                            <div class="col-12 position-relative">
+                                <input type="text" id="passport1" class="form-control pt-4 pb-2" required="" >
+                                <label for="passport1" class="placeholder-fake">Место рождения</label>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <input type="text" id="passport2" class="form-control pt-4 pb-2" required="" >
+                                <label for="passport2" class="placeholder-fake">Серия и номер</label>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <input type="text" id="passport3" class="form-control pt-4 pb-2" required="" >
+                                <label for="passport3" class="placeholder-fake">Кем выдан</label>
+                            </div>
+                            <div class="col-sm-6 position-relative">
+                                <input type="text" id="passport4" class="form-control pt-4 pb-2" required="" >
+                                <label for="passport4" class="placeholder-fake">Дата выдачи</label>
+                            </div>
+                            <div class="col-sm-6 position-relative">
+                                <input type="text" id="passport5" class="form-control pt-4 pb-2" required="" >
+                                <label for="passport5" class="placeholder-fake">Код подразделения</label>
+                            </div>
+                            <div class="col-12 position-relative">
+                                <input type="text" id="passport6" class="form-control pt-4 pb-2"  required="" >
+                                <label for="passport6" class="placeholder-fake">Адрес регистрации</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="w-100 btn btn-lg btn-warning text-white fw-bold  py-3 fs-6" type="submit">Сохранить документ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100  mb-3 py-4 px-4 bg-white">
+                        <h3 class="h3 mb-4">ИНН</h3>
+                        <div class="row g-4 ">
+                            <div class="col-12 position-relative">
+                                <input type="text" id="inn" class="form-control pt-4 pb-2" required="" >
+                                <label for="inn" class="placeholder-fake">ИНН</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="w-100 btn btn-lg btn-warning text-white fw-bold  py-3 fs-6" type="submit">Сохранить документ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-100  mb-3 py-4 px-4 bg-white">
+                        <h3 class="h3 mb-4">СНИЛС</h3>
+                        <div class="row g-4 ">
+                            <div class="col-12 position-relative">
+                                <input type="text" id="snils" class="form-control pt-4 pb-2" required="" >
+                                <label for="snils" class="placeholder-fake">Номер СНИЛС</label>
+                            </div>
+                            <div class="col-sm-6">
+                                <button class="w-100 btn btn-lg btn-warning text-white fw-bold  py-3 fs-6" type="submit">Сохранить документ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="position-absolute w-100 bg-white d-flex  border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-4 px-4"> 
+                    <a href="tel:88005559437" class="link-dark text-decoration-none fw-bold d-block">8 (800) 555-94-37</a>
+                    <p class="text-secondary">24/7 по России</p>
+                    
+                </div>
+                <div class="col-xl-3 col-md-4 mt-3 mt-md-0 px-4">
+                    <a href="mailto:info@pravocard.ru"  class="link-dark text-decoration-none fw-bold d-block">info@pravocard.ru</a>
+                    <p class="text-secondary">Ответим на вопросы</p>
+                </div>
+            </div>
+
+            <div class="row mt-xl-5 mt-3">
+                <p class="small text-secondary px-4">© 2010-2021 ООО «Юридические Решения»</p>
+            </div>
+            <div class="row mt-xl-4 mt-3">
+                <p class="small text-secondary px-4">ОГРН: 5177746279266, ИНН: 9718083320, КПП: 770701001. Адрес: 127055, г. Москва, Бутырский Вал, д. 68/70 стр. 1.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>     
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

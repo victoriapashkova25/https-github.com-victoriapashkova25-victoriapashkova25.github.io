@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta property="og:type"  content="website" />
+    <meta property="og:url"   content="//pravocardsanbox.celestra.ru/account/index.html" />
+    <meta property="og:title" content="Личный кабинет"/>
+    <meta property="og:description" content=""/>
+
+    <meta property="og:image" content="https://pravosites.ru/uploads/files/2020/04/10/rmt7804432341973383677.png"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
+    <title>Профиль</title>
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="shortcut icon" href="https://pravosites.ru/uploads/files/2021/01/07/rmt405189025271554359.png" />
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/vars.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- required JavaScript polyfills for IE11 -->
+    <script nomodule crossorigin="anonymous"
+    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CNumber.parseInt%2CNumber.parseFloat%2CArray.prototype.find%2CArray.prototype.includes"></script>
+  <script nomodule>window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/combine/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js,npm/ie11-custom-properties@4,npm/element-qsa-scope@1"><\/script>');</script>
+
+</head>
+<body>
+    <header class="fixed-top bg-white py-3 d-flex align-items-center ">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto px-4">
+                    <a href="#"><img src="../images/logo.svg" alt=""></a>
+                </div>
+                <div class="d-flex col-auto align-items-center  px-4">
+                    <a href="#" class=" d-none d-lg-inline me-2 btn btn-transparent text-decoration-none text-secondary fw-bold">
+                        Мои обращения
+                    </a>
+                    <div class="dropdown ms-4">
+                        <button class=" dropdown-toggle  btn btn-transparent text-secondary d-flex justify-content-center align-items-center btn-name text-truncate"  type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="rounded-circle bg-light d-flex justify-content-center align-items-center " style="width: 2rem; height: 2rem;" >А</div>
+                            <span class=" d-none d-lg-inline ps-2 fw-bold text-truncate">Александр Александр</span>
+                            <i class="ms-2 d-lg-none bi bi-chevron-down text-muted"></i>
+                        </button>
+                        <ul class="dropdown-menu mt-3 w-100" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item border-bottom text-secondary d-flex justify-content-between" href="#"> <span class="fw-600"> 0 ₽ </span><i class="text-muted  bi bi-plus-square-fill"></i></a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Кабинет</a></li>
+                        <li><a class="dropdown-item text-secondary" href="#">Выход</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="min-vh-100 d-flex ">
+        <div class="container pt-lg-2 mt-6">  
+        <div class="row h-100">
+            <nav class="col-12 col-lg-auto px-4 pt-lg-4 bg-white position-fixed  order-lg-2">
+                <ul class="list-unstyled">
+                    <li><a href="profile-personal-info.html"  class="btn btn-transparent w-100 d-flex align-items-center justify-content-lg-start p-3 fw-bold active">Профиль</a></li>
+                    <li><a href="profile-my-documents.html"  class="btn btn-transparent w-100  d-flex align-items-center justify-content-lg-start p-3 fw-bold text-muted">Мои документы</a></li>
+                    <li><a href="#"  class="btn btn-transparent w-100 d-flex align-items-center justify-content-lg-start p-3 fw-bold text-muted">Продукты</a></li>
+                    <li><a href="profile-setting.html"  class="btn btn-transparent w-100 d-flex align-items-center justify-content-lg-start p-3 fw-bold text-muted">Настройки</a></li>
+                </ul>
+            </nav>
+            <div class="col-auto order-lg-1 px-0 mt-5 mt-lg-0 content bg-light">
+                <div class="px-4 d-flex flex-wrap align-items-center bg-white pt-lg-4">
+                    <div class=" me-3 rounded-circle bg-light d-flex justify-content-center align-items-center fs-5" style="width: 4rem; height: 4rem;">А</div>
+                    <h1 class="fw-600 h1">Александр</h1>
+
+                    <div class="w-100 my-4 pt-4 d-flex flex-wrap">
+                        <div class="col-12 col-lg me-lg-2">
+                            <div class="position-relative">
+                                <input type="text" id="balance" class="form-control pt-4 pb-2 fw-bold bg-white balance" readonly  value="1500">
+                                <label for="balance" class="placeholder-fake">Баланс</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg mt-3 mt-lg-0 ms-lg-2">
+                            <button class="w-100 btn btn-lg btn-light fw-bold py-3 fs-6" data-bs-toggle="modal" data-bs-target="#modalBalance">
+                                    Пополнить баланс
+                                    <i class="ms-2 bi bi-plus-lg text-warning"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="px-4  bg-white w-100 mt-4 py-3 d-flex justify-content-between">
+                    <p class="fw-bold"><i class="bi bi-credit-card-2-back-fill me-2"></i>Активация продукта</p>
+                    <a href="#" class="link link-warning text-decoration-none fw-bold"> 
+                        <span class="d-none d-lg-inline">Активировать продукт</span>
+                        <i class="bi bi-arrow-right d-none d-lg-inline"></i> 
+                        <i class="bi bi-plus-circle-fill d-lg-none text-warning"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer class="position-absolute w-100 bg-white d-flex border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-md-4 px-4"> 
+                    <a href="tel:88005559437" class="link-dark text-decoration-none fw-bold d-block">8 (800) 555-94-37</a>
+                    <p class="text-secondary">24/7 по России</p>
+                    
+                </div>
+                <div class="col-xl-3 col-md-4 mt-3 mt-md-0 px-4">
+                    <a href="mailto:info@pravocard.ru"  class="link-dark text-decoration-none fw-bold d-block">info@pravocard.ru</a>
+                    <p class="text-secondary">Ответим на вопросы</p>
+                </div>
+            </div>
+
+            <div class="row mt-xl-5 mt-3">
+                <p class="small text-secondary px-4">© 2010-2021 ООО «Юридические Решения»</p>
+            </div>
+            <div class="row mt-xl-4 mt-3">
+                <p class="small text-secondary px-4">ОГРН: 5177746279266, ИНН: 9718083320, КПП: 770701001. Адрес: 127055, г. Москва, Бутырский Вал, д. 68/70 стр. 1.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+<div class="modal fade" id="modalBalance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <h5 class="modal-title" id="exampleModalLabel">Пополнить баланс</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="position-relative">
+                <input type="text" id="balance" class="form-control pt-4 pb-2 bg-white input-summ" >
+                <label for="balance" class="placeholder-fake">Баланс</label>
+            </div>
+            <div class="col-12 d-flex justify-content-center hint">
+                <button class="btn btn-light mt-3 mx-1">+100 ₽</button>
+                <button class="btn btn-light mt-3 mx-1">+500 ₽</button>
+                <button class="btn btn-light mt-3 mx-1">+1 000 ₽</button>
+            </div>
+        </div>
+        <div class="modal-footer border-0">
+            <button class="w-100 btn btn-lg btn-light text-warning fw-bold py-3 fs-6">Пополнить </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>     
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>
