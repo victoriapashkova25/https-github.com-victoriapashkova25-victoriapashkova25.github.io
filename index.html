@@ -324,20 +324,121 @@
                 <div class="section section-js">
                     <button disabled class="btn btn-warning"  >java script</button>
                     <button disabled class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >Синтаксис и база</button>
-                    <button disabled class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >jQuery</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#jQuery" >jQuery</button>
                     <button disabled class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >DOM</button>
                     <button disabled class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >Ajax</button>
                     <button disabled class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >ES6+ и модули</button>
                     <button disabled class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >Веб-компоненты</button>
                 </div>
-                <div id="offcanvas" class="offcanvas offcanvas-start" tabindex="-1" >
+                <div id="jQuery" class="offcanvas offcanvas-start" tabindex="-1" >
                     <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <a href="" class="link d-block" target="_blank"></a>
-
+                      <a href="https://docs.google.com/document/d/1cJPOiBwbiW55vLTgmnPXr2yjASf9xhY7SBxqk750EkA/edit" class="link d-block" target="_blank">Конспект</a>
+                      <p>
+                      События jQuery<br>
+                      События мыши<br>
+                     .click()		клик <br>
+                     .dblclick()		двойной клик<br>
+                     .mousedown()	перетаскивание<br>
+                     .mousemove()	передвижение мыши по стр<br>
+                     .mouseout()		уведение указателя с эл-та<br>
+                     .mouseover()	проведение по эл-ту<br>
+                     .mouseup()		отпускание кнопки<br>
+                     <br>
+                     События документа/окна
+                     .load()		после загрузки всех файлов браузером<br>
+                     .resize()		при изменении размера окна браузера<br>
+                     .scroll()		при использовании полосы прокрутки<br>
+                     .unload()		покидание стр (щелчок по ссылке для перехода на др. стр, закрываете вкладки или окна браузер)<br>
+                     <br>
+                     События форм<br>
+                     .blur()			поле формы выводится из фокуса<br>
+                     .change()			при изменении статуса поля формы.focus()		 при переходе в поле <br>
+                     .reset()		 вернуть форму в первоначальное состояние, отменить изменения<br>
+                     .select()		при  выделении текста внутри текстового поля формы<br>
+                     .submit()		при отправке формы (нажимая на кнопку)<br>
+                     <br>
+                     События клавиатуры<br>
+                     .keydown()		при нажатии клавиши<br>
+                     .keypress()		при нажатии клавиши до тех пор, пока вы не отпустите<br>
+                     .keyup()		отпускание клавиши<br>
+                     input<br>
+                     <br>
+                     События jQuery<br>
+                     .hover()		 наведение / снятие указателя мыши<br>
+                     .toggle()		запускается от щелчка кнопкой мыши ( открыть выпадающее меню одним щелчком и скрыть вторым)<br>
+                     <br>
+                     Объект события<br>
+                     pageX		Расстояние (px) от указателя мыши до левого края окна браузера<br>
+                     pageY		Расстояние (px) от указателя мыши до верхнего края окна браузера<br>
+                     screenX	Расстояние (px) от указателя мыши до левого края монитора<br>
+                     screenY	Расстояние (px) от указателя мыши до верхнего края монитора<br>
+                     shiftKey	TRUE при нажатой клавише SHIFT<br>
+                     which		определение числового кода нажатой клавиши ( с shiftKey)<br>
+                     target		объекту события щелкнули кнопкой мыши <br>
+                     data		+  bind() для передачи данных функции, управляющей событием<br>
+                     <br>
+                     Селекторы jQuery<br>
+                     https://html5book.ru/jquery-selectors/ <br>
+                     :even		:odd		:first	:last		:first-child		:nth-child(n)	:not(селектор)	:contains(текст)		:hidden	:visible	:active	:checked	:focus	:hover	:disabled	:target	:animated	:button	:checkbox
+                     <br><br>
+                     
+                     Манипуляции HTML-элементами<br><br>
+                     https://html5book.ru/jquery-manipulyacii/ <br><br>
+                      .text()			возврат / добавление текста<br>
+                      .append()		добавляет содержимое<br>
+                     .appendTo()		<br>
+                     .prepend()		добавляется в начало<br>
+                     .prependTo()<br>
+                     .before()		добавляет перед эл-том<br>
+                     .insertBefore()		Вставляет содержимое перед элементом<br>
+                     .after()			добавляет после эл-та<br>
+                     .insertAfter()		Вставляет содержимое<br>
+                     .wrap()			 обертывает HTML-разметкой<br>
+                     .wrapAll()		Оборачивает все элементы как единое целое в HTML-разметку<br>
+                     .wrapInner()		Оборачивает содержимое элементов<br>
+                     <br>
+                     .unwrap()		Удаляет эл-т<br>
+                     .detach(селектор)<br>
+                     .remove()		удаляет все элементы обернутого набора<br>
+                     .empty()		Удаляет содержимое<br>
+                     .replaceWith()		Заменяет элемент<br>
+                     .replaceAll()<br>
+                     .clone()		Создает копии<br>
+                     <br>
+                     Чтение и изменение CSS-свойств
+                     https://html5book.ru/jquery-svoistva-klassy-atribyti/ <br>
+                     .addClass()		.removeClass()		<br>
+                     .toggleClass()	добавляет при отсутствии / удаляет при присутствии<br>
+                     .hasClass()		наличие класса true  / false <br>
+                     .attr()			.removeAttr()		<br>
+                     .css()			.width()		.height()<br>
+                     .innerWidth()		.innerHeight()		с учетом padding	<br>
+                     .outerWidth()		.outerHeight()		с учетом рамки и отступов<br>
+                     .offset()		координаты (left и top)<br>
+                     .position()<br>
+                     <br>
+                     Обход DOM и выборка html-элементов<br>
+                     https://html5book.ru/jquery-vyborka-elementov/ <br>
+                     <br>
+                     jQuery анимация	<br>
+                     .fadeIn()		прозрачность<br>
+                     .fadeOut()		исчезание	(opacity:0)
+                     .fadeTo()		изменить степень прозрачности<br>
+                     .fadeToggle()		исчезание/появление<br>
+                     .hide()			скрыть видимый эл-т<br>
+                     .show()		показать скрытый эл-т<br>
+                     .toggle()		переключение состояния<br>
+                     .slideDown()		появление скрытого эл-та<br>
+                     .slideUp()		изменение height до 0, после display: none;<br>
+                     .slideToggle()<br>
+                     https://html5book.ru/jquery-animaciya/ <br>
+                     <br>
+                     .animate()		JS<br>
+                    </p>
                     </div>
                 </div>
             </div>
