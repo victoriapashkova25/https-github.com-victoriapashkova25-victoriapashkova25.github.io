@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V2.0</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <div class="bg-dark py-5">
+        <div class="container">
+            <h1 class="text-center mx-auto py-5 title">FRONTEND</h1>
+            <div class="row row-cols justify-content-center">
+                <div class="col-auto">
+                <div class="section section-html ">
+                    <button class="btn btn-warning">html</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#html-availability">Инклюзия</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#html-semantic">Семантика</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#html-valid">Валидность</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#html-about">Неизвестный html</button>
+                </div>
+                <div id="html-availability" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a class="link d-block" href="http://netology.ru/blog/dostupnost">Доступность сайтов для «самых маленьких»</a>
+                        <a class="link d-block" href="https://support.google.com/webmasters/answer/35769">Google Webmaster Guidelines</a>
+                        <a class="link d-block" href="https://habrahabr.ru/post/240065/">Использование <abbr>WAI-ARIA</abbr></a>
+                        <a class="link d-block" href="https://css-tricks.com/making-disabled-buttons-more-inclusive/">Disabled Buttons More Inclusive</a>
+                        <a class="link d-block" href="https://www.w3.org/WAI/people-use-web/" target="_blank" class="link">Как люди с особыми потребностями пользуются сайтом</a>            
+                        <a class="link d-block" href="https://www.w3.org/WAI/people-use-web/" target="_blank" class="link">Как люди с особыми потребностями пользуются сайтом</a>            
+
+                        <ul class="my-3">
+                            <li>Стандарты тестирования доступности: чтобы протестировать страницу, используйте WAVE.Wave testing.</li>
+                            <li>Навигация с помощью клавиатуры: проверьте свой сайт, пользуясь только клавиатурой. Все элементы на сайте должны быть доступны для использования.</li>
+                            <li>Скрин-ридер: все страницы сайта должны работать в программах для чтения информации (VoiceOver, ChromeVox, NVDA или Lynx).</li>
+                            <li>Фокус: если фокус для элементов отключен, он заменяется видимым в CSS состоянием</li>
+                        </ul>
+                        <p>Около 15% людей от всего мирового населения или примерно 1 миллиард живёт с инвалидностью. При разработке надо учитывать доступного сайта: например, структуру заголовков, контролы, цветовой контраст и  другое.
+                            Ответственность только разработчика. Это командная работа. Дизайнеры создают доступный UI, разработчики его разрабатывают, тестировщики проводят тестирование доступности, менеджеры проектов следят за тем, чтобы доступность была частью рабочих процессов.
+                            Для пользователей со слепотой, глухотой, дальтонизмом, с моторными нарушениями и ментальными расстройствами, для пожилых и вообще для всех. Необходимо кому-то, полезно для всех.
+                            Это удовлетворённость пользователей и репутация компании.  Веб-доступность — это о понимании потребностей всех пользователей, а также об эмпатии и осведомлённости.
+                        </p>  
+                    </div>
+                </div>
+                <div id="html-semantic" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="https://htmlacademy.ru/blog/html/semantics" class="link d-block" target="_blank">Что такое семантическая вёрстка и зачем она нужна</a>
+                        <a href="https://habr.com/ru/company/htmlacademy/blog/546500/" class="link d-block" target="_blank">Почему семантика важна</a>
+                        <a href="https://webref.ru/layout/advanced-html-css/semantics-accessibility" class="link d-block" target="_blank">Продвинутая семантика и доступность</a>
+                        <a href="https://www.youtube.com/watch?v=bDYEnNzprzE" class="link d-block" target="_blank">Семантика для циников, Вадим Макеев</a>
+                    </div>
+                </div>
+                <div id="html-valid" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="https://validator.w3.org/" class="btn btn-primary mb-3" target="_blank">validator </a>
+                        <ul>
+                            <li>валидный HTML не гарантирует accessibility</li> 
+                            <li>валидный HTML не гарантирует хороший UX (user experience)</li> 
+                            <li>валидный HTML не гарантирует функционирующий сайт</li> 
+                            <li>валидный HTML не гарантирует корректное отображение сайта</li> 
+                            <li>множество сайтов, в том числе топовых, невалидны</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="html-about" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <h6>Продвинутый выбор даты</h6>
+                        <p>В стандарте для input type="date" поддерживаются атрибуты min, max и step, благодаря которым можно частично ограничить выбор даты прямо в HTML</p>
+                        <h6>Несколько email-ов в одном поле</h6>
+                        <p>Указать атрибут multiple <code> input type="email" inputmode="text" multiple</code></p>
+                        <h6>Mark</h6>
+                        <p>Текст, выделенный в справочных целях из-за своей актуальности в определённом контексте</p>
+                        <h6>Accept</h6>
+                        <p>Указывает, файлы какого типа разрешены в качестве входящих данных. <code>accept=".jpg, .png"</code></p>
+                        <h6>Autofocus</h6>
+                        <p>Показывает, что при загрузке страницы данный элемент должен быть в фокусе.</p>
+                        <h6>Inputmode</h6>
+                        <p>Подсказывает браузеру, какого типа данные могут быть введены пользователем при редактировании элемента или его содержимого.</p>
+                        <h6>Pattern</h6>
+                        <p>Задает регулярное выражение, с шаблоном которого сравнивается значение input при отправке формы.</p>
+                        <h6>Autocomplete</h6>
+                        <p>Указывает, можно ли браузеру помогать пользователю в заполнении поля формы (например, email-адрес, номер телефона, страну и т. п.).</p>
+                        <h6>Contenteditable</h6>
+                        <p>Дает возможность пользователю редактировать содержимое элемента.</p>
+                        <h6>Spellcheck</h6>
+                        <p>Определяет, будет ли проверяться орфография в данном элементе.</p>
+                        <h6>Translate</h6>
+                        <p>Определяет, должен ли элемент переводиться при локализации страницы.</p>
+                        <h6>Loading</h6>
+                        <p>Указывает, должен браузер сразу начинать загрузку изображений или отложить ее. Загрузка может начаться, например, когда пользователь прокрутит страницу до этих изображений.Поведение по умолчанию — eager, а для отложенной загрузки используется значение lazy («ленивая загрузка).</p>
+                        <h6>Onerror</h6>
+                        <p>Дает возможность добавить запасное изображение (fallback) на случай, если основное не загрузится.</p>
+                        <h6>Poster</h6>
+                        <p>Добавить изображение, которое будет показываться, пока загружается видео.</p>
+                        <h6>Draggable</h6>
+                        <p>Указывает, можно ли перетаскивать элемент.</p>
+                    </div>
+                </div>
+
+                <div class="section section-css">
+                    <button class="btn btn-warning">css</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#css-base">База</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#css-adaptive">Адаптив</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#css-media">Медиа</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#css-animation">Анимации</button>
+                </div>
+                <div id="css-base" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                    </div>
+                </div>
+                <div id="css-adaptive" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                    </div>
+                </div>
+                <div id="css-cross" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        Проверка кроссбраузерности:
+                        <a href="https://browsershots.org/" class="link d-block" target="_blank">browsershots</a>
+                        <a href="https://www.browserstack.com/" class="link d-block" target="_blank">browserstack</a>
+                        Основные движки:<br>
+                        Blink — Google (Opera, Яндекс.Браузер, Vivaldi )<br>
+                        WebKit — Apple (Safari)<br>
+                        Gecko — Mozilla<br>
+                        Использование префиксов<br>
+                        свойство написано для конкретного браузера, и оно не содержится в стандартном списке свойств;<br>
+                        свойство экспериментальное, еще находится в разработке;<br>
+                        свойство реализует частичный функционал. <br>
+                        -moz- используется в Firefox;<br>
+                        -ms- используется в Edge и Internet Explorer;<br>
+                        -webkit- используется в Safari, Chrome и браузерах на основе движков WebKit и Blink;<br>
+                        <code>
+                            @-moz-document url-prefix() {
+                            .hackBlock {
+                                background: blue;
+                            }
+                        } 
+                     </code>
+                     <br>
+                        Разделение стилей для браузеров (для IE)
+                        <br>
+                        <code>
+                            !—[if IE 9]<br>
+                                 link rel="stylesheet" href="style-for-ie9.css"<br>
+                            ![endif]—
+                        </code>
+                        <br>
+                    </div>
+                </div>
+                <div id="css-media" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="" class="link d-block" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="css-animation" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                    </div>
+                </div>
+
+                <div class="section section-css-frameworks">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#css-frameworks" >Bootstrap</button>
+                </div>
+                <div id="css-frameworks" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <a href="" class="link d-block" target="_blank"></a>
+                    </div>
+                </div>
+
+                <div class="section section-architecture">
+                    <button class="btn btn-warning"  >architecture</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#arc-modul">Компонентная</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#arc-bem" >БЭМ</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#arc-css" >CSS-in-JS</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#arc-sass">SASS</button>
+                </div>
+                <div id="arc-modul" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <a href="" class="link d-block" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="arc-bem" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <a href="" class="link d-block" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="arc-css" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <a href="" class="link d-block" target="_blank"></a>
+                    </div>
+                </div>
+                <div id="arc-sass" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+
+                        <a href="" class="link d-block" target="_blank"></a>
+                    </div>
+                </div>
+
+                <div class="section section-test">
+                    <button class="btn btn-warning"  >test</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#test">Тестирование</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#test-check">Чек-лист</button>
+                </div>
+                <div id="test" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="" class="link d-block" target="_blank"></a>
+
+                    </div>
+                </div>
+                <div id="test-check" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        Критерии качества вёрстки
+                        Кроссбраузерность <br>
+                        Переполнение<br>
+                        Текст должен оставаться в рамках родительского блока при переполнении.<br>
+                        Текст не должен обрезаться или вываливаться из родительского блока при переполнении.<br>
+                        Текст не должен смещать другие блоки.<br>
+                        Родительский блок должен сохранять минимальные размеры при недополнении.<br>
+                        Слова, длиннее минимальной ширины, должны переноситься.<br>
+                        Размеры элементов<br>
+                        Контент больше ширины родителя не должен выходить за его пределы, ломать сетку или смещать другие блоки.<br>
+                        При увеличении количества элементов они должны оставаться в рамках родительского блока.<br>
+                        Элементы могут переноситься на следующую строку при уменьшении размера родителя.
+                        При минимальном количестве элементов или их отсутствии родительский блок должен сохранять минимальные размеры.<br>
+                        Последние блоки в сетках должны выравниваться по направлению текста.<br>
+                        Элементы могут переноситься на следующую строку при уменьшении размера родителя.<br>
+                        Стайлгайд<br>
+                        Для элементов форм, кнопок и ссылок:hover, focus, active.<br>
+                        Для элементов форм: disabled.<br>
+                        Валидация <br>
+                        Фавиконки 32×32 и в формате PNG<br>
+                        Фоновый цвет у фоновых картинок (картинка не загрузилась, но при этом цвет фона остался цвет, который соответствует преобладающему цвету изображения)
+                    </div>
+                </div>
+
+                <div class="section section-design">
+                    <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#ux" >UI & UX</button>
+                </div>
+                <div id="ux" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="" class="link d-block" target="_blank"></a>
+                    </div>
+                </div>
+
+                <div class="section section-js">
+                    <button class="btn btn-warning"  >java script</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >Синтаксис и база</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >jQuery</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >DOM</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >Ajax</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >ES6+ и модули</button>
+                    <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" >Веб-компоненты</button>
+                </div>
+                <div id="offcanvas" class="offcanvas offcanvas-start" tabindex="-1" >
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"> </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <a href="" class="link d-block" target="_blank"></a>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-wrapper py-5">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-3 g-4 py-5">
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body">
+                      <h5 class="card-title">Математика для верстальщика</h5>
+                      <p class="card-text">Функции сравнения CSS: min(), max() и clamp(). <br> 
+                        Построение 3D </p>
+                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#math">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body">
+                      <h5 class="card-title">Оптимизация</h5>
+                      <p class="card-text">Тестируем и оптимизируем верстку. Инструменты.</p>
+                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#optimize">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body">
+                      <h5 class="card-title">Chrome DevTools</h5>
+                      <p class="card-text">Инструменты разработчика в браузере. Инструменты Firefox.</p>
+                      <a href="#" class="btn btn-dark"  data-bs-toggle="modal" data-bs-target="#devtools">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body ">
+                      <h5 class="card-title">Псевдоэлементы & псевдоклассы</h5>
+                      <p class="card-text">Обзор и примеры.</p>
+                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#pseudo">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body ">
+                      <h5 class="card-title">Pure CSS</h5>
+                      <p class="card-text">Функцияонал чистого CSS.</p>
+                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#pureCss">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body">
+                      <h5 class="card-title">Переменные CSS</h5>
+                      <p class="card-text">Пользовательские CSS-свойства</p>
+                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#varCss">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body">
+                      <h5 class="card-title">Руководство по word-wrap, overflow-wrap и word-break в CSS</h5>
+                      <p class="card-text">Переполнение контента и принудительный перенос строки.</p>
+                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#wrapCss">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border-secondary border-opacity-75">
+                    <div class="card-body">
+                      <h5 class="card-title">Анатомия css-каскада</h5>
+                      <p class="card-text">Фундаментальные механизмы: обработка значений (value processing), каскад и наследование.</p>
+                      <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#cascadCss">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                    <div class="card border-secondary border-opacity-75">
+                      <div class="card-body">
+                        <h5 class="card-title">Многослойные элементы</h5>
+                        <p class="card-text">Попапы, модальные окна, тултипы, прокручивающиеся вместе со всем сайтом «липкие» меню, выпадающие элементы, «прелоадеры».</p>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalCss">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+        </div>
+    </div>
+
+    <div class="faq-wrapper py-5">
+        <div class="container">
+            <div class="accordion py-5" id="accordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                     Инструменты оптимизации
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <a href="https://kraken.io/" class="btn btn-lg btn-danger" target="_blank">kraken</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.responsivebreakpoints.com/" class="btn btn-lg btn-danger" target="_blank">Breakpoints generation</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect" class="btn btn-lg btn-danger" target="_blank">Pagespeed</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://imagecompressor.com/" class="btn btn-lg btn-danger" target="_blank">optimizilla</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://search.google.com/test/mobile-friendly?hl=ru" class="btn btn-lg btn-danger" target="_blank">Mobile</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.speedcurve.com/" class="btn btn-lg btn-danger" target="_blank">Speedcurve</a></td>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#generat" aria-expanded="false" aria-controls="generat">
+                      Генераторы
+                    </button>
+                  </h2>
+                  <div id="generat" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <a href="https://css3clickchart.com/" class="btn btn-lg btn-danger" target="_blank">CSS Click Chart</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://webcode.tools/generators/css" class="btn btn-lg btn-danger" target="_blank">Web Code Toolss</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://hero-generator.netlify.app/" class="btn btn-lg btn-danger" target="_blank">Hero Generator</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://blurha.sh/" class="btn btn-lg btn-danger" target="_blank">BlurHash</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://alialaa.github.io/css-grid-cheat-sheet/" class="btn btn-lg btn-danger" target="_blank">CSS Grid Cheat Sheet</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.thegoodlineheight.com/" class="btn btn-lg btn-danger" target="_blank">line-height calculates</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.layoutgridcalculator.com/type-scale/" class="btn btn-lg btn-danger" target="_blank">Typographic Scale Calc</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://type-scale.com/" class="btn btn-lg btn-danger" target="_blank">type-scale</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://mybrandnewlogo.com/ru/generator-gradienta-cveta" class="btn btn-lg btn-danger" target="_blank">Gradient</a></td>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.learnui.design/tools/data-color-picker.html#palette" class="btn btn-lg btn-danger" target="_blank">PALETTE GENERATOR</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://cubic-bezier.com/#.17,.67,.83,.67" class="btn btn-lg btn-danger" target="_blank">cubic-bezier</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://larsenwork.com/easing-gradients/" class="btn btn-lg btn-danger" target="_blank">Easing Gradients</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://css3gen.com/gradient-generator/" class="btn btn-lg btn-danger" target="_blank">Gradient Generator</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://css3gen.com/box-shadow/" class="btn btn-lg btn-danger" target="_blank">Shadow Generator</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.smashingmagazine.com/2021/03/svg-generators/" class="btn btn-lg btn-danger" target="_blank">SVG Generators</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://randomuser.me/" class="btn btn-lg btn-danger" target="_blank">RANDOM USER</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://animista.net/" class="btn btn-lg btn-danger" target="_blank">Css animations</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://coolors.co/" class="btn btn-lg btn-danger" target="_blank">Color palettes</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://www.joshwcomeau.com/gradient-generator/" class="btn btn-lg btn-danger" target="_blank">Gradient</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://pixelmap.amcharts.com/" class="btn btn-lg btn-danger" target="_blank">Pixel Map</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://the-echoplex.net/flexyboxes/" class="btn btn-lg btn-danger" target="_blank">Flex</a>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cheatsheet" aria-expanded="false">
+                        Cheatsheet
+                    </button>
+                  </h2>
+                  <div id="cheatsheet" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+                            <div class="col">
+                                <a href="https://flexbox.malven.co/" class="btn btn-lg btn-danger" target="_blank">flexbox.malven</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://grid.malven.co/" class="btn btn-lg btn-danger" target="_blank">grid.malve</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://tpverstak.ru/flex-cheatsheet/" class="btn btn-lg btn-danger" target="_blank">flexbox</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://vk.com/doc-120462295_493223893?hash=lha3cwNk2oTffJWJGIWJHzwaeZzWbeh0q2heQ71JokX&dl=x9asvLKgjyaIljAYGGWIQCTC2IWYca4RtS08yCmI20c" class="btn btn-lg btn-danger" target="_blank">CSS3</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://dev.to/joyshaheb/css-grid-cheat-sheet-illustrated-in-2021-1a3" class="btn btn-lg btn-danger" target="_blank">grid</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://vk.com/doc-60116137_232154723?hash=JiOIUZRVh7Dewe7voY9cCSGqXXsQMqRskJM2uxghn0g&dl=znKFb4mGprPukm4tGosOiSHZUfZIJSsz8DAcaBUC4Q4" class="btn btn-lg btn-danger" target="_blank">CSS3</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://yoksel.github.io/flex-cheatsheet/" class="btn btn-lg btn-danger" target="_blank">flexbox v.2</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://grid.layoutit.com/" class="btn btn-lg btn-danger" target="_blank">grid.layout</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://vk.com/doc-89480549_476438521?hash=cKY5ZPslnoLddCBw8ZqFWcGVVyAYxdOZfhZ0uBXOH5s&dl=hiZZlrIx51AGelPlz3MKelgBI5DbTZQzxplZE7HhiVX" class="btn btn-lg btn-danger" target="_blank">CSS3</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://vk.com/doc-108959884_437360287?hash=SUkhiC7FAIodogDN2G9iMKCJLjctiqPmuCPLWw9HyyH&dl=qoNZ5NsCsrA209Yi9az34lhzZhfgFmlNmTz572YMDGg" class="btn btn-lg btn-danger" target="_blank">Canvas</a>
+                            </div>
+                            <div class="col">
+                                <a href="http://cheatsheets.shecodes.io/vs-code" class="btn btn-lg btn-danger" target="_blank">VS Code</a>
+                            </div>
+                            <div class="col">
+                                <a href="http://cheatsheets.shecodes.io/bootstrap" class="btn btn-lg btn-danger" target="_blank">Bootstrap</a>
+                            </div>
+                            <div class="col">
+                                <a href="https://storage.googleapis.com/codeavengers.appspot.com/cloud/lesson-plans/html-css/jquery-mega-cheat-sheet-20152.jpg" class="btn btn-lg btn-danger" target="_blank">jquery</a>
+                            </div>
+                            <div class="col">
+                                <a href="http://cheatsheets.shecodes.io/javascript" class="btn btn-lg btn-danger" target="_blank">JavaScript</a>
+                            </div>
+                            <div class="col">
+                                <a href="http://cheatsheets.shecodes.io/react" class="btn btn-lg btn-danger" target="_blank">React</a>
+                            </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#className" aria-expanded="false" aria-controls="className">
+                        Названия классов HTML/CSS
+                    </button>
+                  </h2>
+                  <div id="className" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <h5>Блоки</h5>
+                        <p>
+                            page — корневой элемент страницы
+                            <br>
+                            header — шапка (страницы или элемента)
+                            <br>
+                            footer — подвал (страницы или элемента)
+                            <br>
+                            section — раздел контента (один из нескольких)
+                            <br>
+                            body — основная часть (страницы или элемента)
+                            <br>
+                            content — содержимое элемента
+                            <br>
+                            sidebar — боковая колонка (страницы или элемента)
+                            <br>
+                            aside — блок с дополнительной информацией
+                            <br>
+                            widget — виджет, например, в боковой колонке
+                        </p>
+                        <h5>Раскладка</h5>
+                        <p>
+                            wrapper, wrap — обёртка, обычно внешняя
+                            <br>
+                            inner — внутренняя обёртка
+                            <br>
+                            container, holder, box — контейнер
+                            <br>
+                            grid — раскладка (страницы или элемента) в виде сетки (обычно содержит в себе row и col)
+                            <br>
+                            row — контейнер в виде строки
+                            <br>
+                            col, column — контейнер в виде столбца
+                        </p>
+                        <h5>Элементы управления</h5>
+                        <p>
+                            button, btn — кнопка, например, для отправки формы
+                            <br>
+                            control — элемент управления, например, стрелки «Вперёд/назад» в фотогалерее, кнопки управления слайдером
+                            <br>
+                            dropdown — выпадающий список
+                        </p>
+                        <h5>Текст</h5>
+                        <p>
+                            title, subject, heading, headline, caption — заголовок
+                            <br>
+                            subtitle — подзаголовок
+                            <br>
+                            slogan — слоган
+                            <br>
+                            lead, tagline — лид-абзац в тексте
+                            <br>
+                            text — текстовый контент
+                            <br>
+                            desc — описание, вариант текстового контента
+                            <br>
+                            excerpt — отрывок текста, обычно используется перед ссылкой «Читать далее…»
+                            <br>
+                            link — ссылка
+                            <br>
+                            copyright, copy — копирайт
+                        </p>
+                        <h5>Списки</h5>
+                        <p>
+                            list, items — список
+                            <br>
+                            item — элемент списка
+                        </p>
+                        <h5>Изображения</h5>
+                        <p>
+                            image, img, picture, pic — картинка
+                            <br>
+                            icon — иконка
+                            <br>
+                            logo — логотип
+                            <br>
+                            userpic, avatar — юзерпик, маленькая картинка пользователя
+                            <br>
+                            thumbnail, thumb — миниатюра, уменьшенное изображение
+                        </p>
+                        <h5>Медиавыражения</h5>
+                        <p>
+                            phone, mobile — мобильные устройства
+                            <br>
+                            phablet — телефоны с большим экраном (6-7″)
+                            <br>
+                            tablet — планшеты
+                            <br>
+                            notebook, laptop — ноутбуки
+                            <br>
+                            desktop — настольные компьютеры
+                        </p>
+                        <h5>Размеры</h5>
+                        <p>
+                            tiny — маленький, крохотный
+                            <br>
+                            small — небольшой
+                            <br>
+                            medium — средний
+                            <br>
+                            big, large — большой
+                            <br>
+                            huge — огромный
+                            <br>
+                            narrow — узкий
+                            <br>
+                            wide — широкий
+                        </p>
+                        <h5>Состояния</h5>
+                        <p>
+                            active, current — активный элемент, например, текущий пункт меню
+                            <br>
+                            hidden — скрытый элемент
+                            <br>
+                            error — статус ошибки
+                            <br>
+                            warning — статус предупреждения
+                            <br>
+                            success — статус успешного выполнения задачи
+                            <br>
+                            pending — состояние ожидания, например, перед сменой статуса на error или success
+                        </p>
+                        <h5>Дополнительно</h5>
+                        <p>
+                            search — поиск
+                            <br>
+                            socials — блок иконок соцсетей
+                            <br>
+                            advertisement, adv, commercial, promo — рекламный блок (режутся Адблоком, не рекомендуется использовать такие классы для блоков с внутренней рекламой)
+                            <br>
+                            features, benefits — список основных особенностей товара, услуги
+                            <br>
+                            slider, carousel — слайдер, интерактивный элемент с прокруткой содержимого
+                            <br>
+                            pagination — постраничная навигация
+                            <br>
+                            user, author — пользователь, автор записи или комментария
+                            <br>
+                            meta — блок с дополнительной информацией, например, блок тегов и даты в посте
+                            <br>
+                            cart, basket — корзина
+                            <br>
+                            breadcrumbs — навигационная цепочка, «хлебные крошки»
+                            <br>
+                            more, all — ссылка на полную информацию
+                            <br>
+                            modal — модальное (диалоговое) окно
+                            <br>
+                            popup — всплывающее окно
+                            <br>
+                            tooltip, tip — всплывающие подсказки
+                            <br>
+                            preview — анонс, отрывок, например новости или поста, может состоять из заголовка, описания и картинки. Предполагается ссылка на полную версию                            
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#screenResolution" aria-expanded="false" aria-controls="collapseThree">
+                       Статистика разрешений экранов
+                    </button>
+                  </h2>
+                  <div id="screenResolution" class="accordion-collapse collapse" data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <a href="https://ru.screenresolution.org/year-2022/" class="link-dark" target="_blank">Источник</a>
+                        <table class="table ">
+                            <tr>
+                                <td accordion>1<td title="1920x1080 16:9 HD 1080: 22.89%">1920x1080</td>
+                                <td accordion>22.89%</td>
+                            </tr>
+                            <tr>
+                                <td accordion>2<td title="1536x864: 7.31%">1536x864</td>
+                                <td accordion>7.31%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>3<td title="1366x768 HD: 6.74%">1366x768</td>
+                                <td accordion>6.74%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>4<td title="1440x900 8:5 WSXGA: 4.95%">1440x900</td>
+                                <td accordion>4.95%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>5<td title="800x600 4:3 SVGA: 4.70%">800x600</td>
+                                <td accordion>4.70%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>6<td title="2560x1440: 4.39%">2560x1440</td>
+                                <td accordion>4.39%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>7<td title="1280x720 16:9 HD 720: 2.68%">1280x720</td>
+                                <td accordion>2.68%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>8<td title="1680x1050 8:5 WSXGA+: 2.03%">1680x1050</td>
+                                <td accordion>2.03%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>9<td title="414x896: 2.02%">414x896</td>
+                                <td accordion>2.02%</td>
+                            </tr>
+                            <tr >
+                                <td accordion>10<td title="393x873: 1.79%">393x873</td>
+                                <td accordion>1.79%</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="books py-5 mb-5">
+        <div class="container">
+            <div class="slider-books shadow py-5">
+                <div class="slider-books-items">
+                    <a href="https://vk.com/wall-51126445_40929" target="_blank">
+                        <img class="slider-books-img" src="https://sun9-36.userapi.com/impg/kgwii6RTyI41R3UjrayqCApiHBxpDSReSZ7AvQ/v69DMeJ2C_I.jpg?size=248x364&quality=96&sign=537f61927cf0e01019719778be239106&type=album" alt="">
+                    </a>
+                </div>
+                <div class="slider-books-items">
+                    <a href="https://vk.com/doc-15153866_485902167" target="_blank">
+                        <img class="slider-books-img" src="https://sun9-31.userapi.com/impg/R1ViYB0nEaMNsn4gPPvdSftTHuqozGTPHAmR4g/ryfYcY6ecto.jpg?size=1058x1500&quality=96&sign=4d2a6a6ebe6c4e855233c86a8a537d30&type=album" alt="">
+                    </a>
+                </div>
+                <div class="slider-books-items">
+                    <a href="https://vk.com/doc10903696_309832418?hash=EjL3ocIegEBUsYUJBtzbmAMU3qkT2pOtA7WZUYnZDl8&dl=sGSR3J4C46d0JOlBROaRyLunMiHlQb4SzB9uzY09Joo" target="_blank">
+                        <img class="slider-books-img" src="https://sun9-64.userapi.com/impg/h4H6Z0tQXqn2GaJEypVmInRlzLVReagoDmA6tQ/QivcqiDMQr8.jpg?size=1344x1868&quality=96&sign=ccbaa19ebb9ecb68f717861c7a47eca6&type=album" alt="">
+                    </a>
+                </div>
+                <div class="slider-books-items">
+                    <a href="https://vk.com/doc565756056_561703428" target="_blank">
+                        <img class="slider-books-img" src="https://sun9-17.userapi.com/impg/JCgU-Cl2Feu06Eiq2FK948obAQc5Li3t3npNSw/fActGtEk2zc.jpg?size=702x994&quality=96&sign=d18af093bf320d8ddaa6e838a1e6ddf4&type=album" alt="">
+                    </a>
+                </div>
+                <div class="slider-books-items">
+                    <a href="https://vk.com/doc10943591_617328424" target="_blank">
+                        <img class="slider-books-img" src="https://sun9-46.userapi.com/impg/n_0b5QhewZ8bfhP0Y3WoPA4AJiMTUdFS7p9e2g/bKuRv5-7kJ0.jpg?size=1045x1500&quality=96&sign=fc7fdb07902d7f9479409a3eb1a1824b&type=album" alt="">
+                    </a>
+                </div>
+                <div class="slider-books-items">
+                    <a href="https://vk.com/doc44301783_448824849?hash=ANjIs8mhXQtwhBFRjBE51JkXpWz36VEki8KQb8z8g9D&dl=QkzLrJYjS96Dz2XtozLVsAjupzTS6PX7e4gEcLLaqBc" target="_blank">
+                        <img class="slider-books-img" src="https://sun9-71.userapi.com/impg/e9rvL8n7lLrYdu9zhOJUISMwI-0tX9Vb8_9BSQ/Th6kJoz9oOY.jpg?size=400x567&quality=96&sign=c1bd25b0b88e0e7ec3edeab2c43a123a&type=album" alt="">
+                    </a>
+                </div>
+                <div class="slider-books-items">
+                    <a href="" target="_blank">
+                        <img src="" alt="">
+                    </a>
+                </div>
+                <div class="slider-books-items">
+                    <a href="" target="_blank">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="math"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Математика для верстальщика</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <a href="https://habr.com/ru/post/520078/" class="link d-block" target="_blank">Матрицы, базовые трансформации, построение 3D и фильтры для картинок</a>
+ 
+            <a href="https://blog.scottlogic.com/2022/01/20/noJS-making-a-calculator-in-pure-css-html.html" class="link d-block" target="_blank">Calculator with only pure HTML and CSS</a>
+            <a href="https://www.youtube.com/watch?v=YtkGbZ3DxoQ" class="link d-block" target="_blank">CSS Математика - новый подход в адаптивной верстке</a>
+            <a href="https://tympanus.net/codrops/2021/06/01/trigonometry-in-css-and-javascript-introduction-to-trigonometry/" class="link d-block" target="_blank">Trigonometry in CSS and JavaScript</a>
+            <a href="https://yoksel.github.io/css-math/" class="link d-block" target="_blank">Математические функции в CSS</a>
+            
+            <a href="https://webformyself.com/adaptivnye-makety-bez-media-zaprosov/" class="link d-block" target="_blank">Адаптивные макеты без медиа-запросов</a>
+            <p>
+                flex-wrap + вычисления CALC, MIN и MAX <br>
+                <code>
+                    main {
+                    width:50%;
+                    min-width:min(36em, 100%);
+                    }
+                </code> <br>
+                50% гарантирует, что контейнер вырастет достаточно, чтобы вместить столбцы. Магия в вычислении min-width:min. Он либо окажется размером меньше 36em, либо займет 100% доступного пространства
+                </p>
+            <code>
+                html {
+                  font-size: calc(#{$minimum-size}px + (#{$maximum-size} — #{$minimum-size}) * ((100vw — #{$minimum-viewport}px) / (#{$maximum-viewport} — #{$minimum-viewport})));
+                }
+            </code>
+            <p>
+                Практическое использование aspect-ratio - указываете ширину и высоту соотношения сторон через слэш или укажите число с плавающей точкой <br>
+                <code>
+                    .aspect-box {
+                      aspect-ratio: 3 / 2;
+                    }
+                     <br>
+                    .aspect-box {
+                      aspect-ratio: 1.5;
+                    }
+                </code>
+                если какое-то разрешение не указано, оно автоматически определится по соотношению сторон<br>
+                подстраивается как под контент, так и под контекст<br>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="optimize"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Оптимизация</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            https://tproger.ru/translations/how-to-boost-frontend/ 
+            https://habr.com/ru/company/hh/blog/513940/ 
+            https://developers.google.com/search/docs/appearance/google-images?hl=ru&visit_id=637581397483457010-275717000&rd=1
+            https://search.google.com/test/mobile-friendly?hl=ru
+            https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect
+            https://developers.google.com/search#?modal_active=none
+            https://habr.com/ru/company/htmlacademy/blog/585866/
+            оптимиз изобр 
+            https://developers.google.com/search/docs/appearance/google-images?hl=ru&visit_id=638054336225020642-2242248927&rd=1 
+            https://kraken.io
+            https://www.scorp13.com/workflow/skorost-css-selektorov-sushestvenna-li-raznica-v-ih-effektivnosti.html 
+            https://proglib.io/p/terrible-css 
+            
+            <a href="" class="link d-block" target="_blank">CSS</a>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="devtools"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Chrome DevTools</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Полное древовидное представление доступности </h6>
+            <p>Просматривайте элементы с более подробной информацией об их доступности. <br>
+                Экспериментальные функции  —  Выберете древовидное представление полной доступности на панели «Элементы».
+                Закройте окно DevTools и откройте его снова.Переключите Режим просмотра элементов на Древовидное представление с полным доступом, нажав кнопку специальных возможностей на панели «Элементы».</p>
+            <h6>Брейкпоинты (точки останова) DOM</h6>
+            <p>Щёлкните правой кнопкой на элементе, для которого вы хотите установить брейкпоинт.  —  Выберите пункт меню «Останов на»  —  Затем выберите нужный пункт: модификации поддерева, модификации атрибутов или удаления узла.</p>  
+            <h6> Принудительные псевдоклассы для элементов</h6>
+            <p>переключить псевдокласс между :active, :focus, :hover, :loaded, :focus-within или :focus-visible<br>
+                перейдите на вкладку «Стили»  —  выберите :hov   —  отметьте псевдокласс
+            </p>
+            <h6>Горячие клавиши</h6>
+            <p>Скрыть элемент  —  h <br>
+                Удалить элемент  — Ctrl+Z<br>
+                Найти элемент —  Ctrl+F
+            </p>
+            <h6>CSP Violations — предупреждения о возможных уязвимостях безопасности</h6>
+            <p> Точки останова CSP violations в Chrome DevTools перехватывают возможные исключения, связанные с нарушениями CSP, и указывают на них в коде.
+                Включение этой функции добавит дополнительный уровень безопасности вашему приложению и уменьшит уязвимости, такие как межсайтовый скриптинг (XSS).
+                <br>  
+                «Источники»  —  Экспериментальные функции  —  Установите флажок Показать нарушения CSP.
+                <br>
+                Закройте окно DevTools и откройте его снова.В разделе «Точки останова при нарушениях CSP» отметьте «Нарушения доверенного типа» и типы нарушений, чтобы активировать эту функцию.</p>
+            <h6>Режим двойного экрана — имитация двойного экрана для складных устройств</h6>
+            <p>
+            Экспериментальные функции  — Выберете Эмуляция: поддержка двухэкранного режима.
+            Закройте окно DevTools и откройте его снова. 
+            Откройте веб-страницу, которую вы хотите протестировать, с помощью опции Toggle Device Toolbar в правом верхнем углу окна DevTool.
+            Переключите эмулятор на устройство Surface Duo  —  «Переключить двухэкранный режим»
+            </p>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="pseudo"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Псевдоэлементы & псевдоклассы</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://habr.com/ru/company/skillbox/blog/592643/" class="link d-block" target="_blank">10 вещей с помощью before и after</a>
+            <a href="https://css-live.ru/articles-css/impossible-pseudos.html" class="link d-block" target="_blank">Псевдоэлементы, которых не может быть</a>
+            <a href="https://paulradzkov.com/2014/negation_css_selector/" class="link d-block" target="_blank">CSS-селектор :not. Полезные примеры</a>
+            <p>
+                отобрать классы (или любые другие атрибуты), значение которых содержит некоторую комбинацию символов:
+               <code>
+                span[class*="icon-"] <br>
+                span[class^="icon"]<br>
+                [href^="https://"]
+               </code> <br>
+                скрыть пустые элементы: <br>
+                <code>div:empty { display: none; }</code>    <br>
+                последним потомком родителя, но не единственным:
+                <code>.btn:last-child:not(:first-child) <br>
+                input[type="checkbox"]:checked ~ p { color: red; }</code> <br>
+                 Воспользовавшись свойствами радиокнопок и чекбоксов, можно делать интерактивные элементы, которые будут появляться и исчезать при нажатии:
+                 <br>
+                 <code>p { display: none; } <br>
+                input[type="checkbox"]:checked ~ p { display: block; }</code>
+            </p>
+        </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="pureCss"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Pure CSS</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://proglib.io/p/7-useful-css-tricks" class="link d-block" target="_blank">7 полезных приемов с функциями на чистом CSS</a>
+            <a href="https://css-components.felipefialho.com/#component-tooltip" class="link d-block" target="_blank">Components</a>
+            <a href="https://www.youtube.com/watch?v=Up464iawf40" class="link d-block" target="_blank">attr и tooltip без JS</a>
+            <a href="https://htmlacademy.ru/blog/html/pure-css-tree" class="link d-block" target="_blank">Простая анимация на чистом css</a>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="varCss"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Переменные CSS</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://habr.com/ru/company/netologyru/blog/431616/" class="link d-block" target="_blank">Введение в пользовательские CSS-свойства</a>
+            <a href="https://habr.com/ru/post/589375/" class="link d-block" target="_blank">Основные варианты использования CSS-переменных</a>
+            <a href="https://habr.com/ru/company/macloud/blog/550168/" class="link d-block" target="_blank">Крутые трюки с переменными CSS</a>
+            <a href="https://habr.com/ru/company/netologyru/blog/435654/" class="link d-block" target="_blank">Подводные камни пользовательских CSS-свойств</a>
+            <a href="https://habr.com/ru/company/netologyru/blog/449418/" class="link d-block" target="_blank">Создаем виджет с помощью пользовательских CSS-свойств: встраиваем кастомную ссылку на сайт NHL</a>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="wrapCss"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Руководство по word-wrap, overflow-wrap и word-break в CSS</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://webformyself.com/polnoe-rukovodstvo-po-word-wrap-overflow-wrap-i-word-break-v-css/" class="link d-block" target="_blank">Полное руководство </a>
+            <a href="https://blog.logrocket.com/guide-word-wrap-overflow-wrap-word-break-css/" class="link d-block" target="_blank">complete guide</a>
+            <p>word-wrap — это устаревшее имя свойства overflow-wrap</p>
+        </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="cascadCss"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Анатомия css-каскада</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://habr.com/ru/company/htmlacademy/blog/590779/" class="link d-block" target="_blank">Никто не знает, как работает каскад</a>
+            <a href="https://ishadeed.com/article/cascade-layers/" class="link d-block" target="_blank">Hello, CSS Cascade Layers</a>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="modal fade" id="modalCss"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Многослойные элементы</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <a href="https://cloud.mail.ru/public/h18w/Vi7ParavH" class="link d-block" target="_blank">Курс </a>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $('.slider-books').slick({
+          infinite: true,
+          slidesToShow: 4,
+          slidesToScroll: 3
+        });
+    </script>
+
+</body>
+</html>
