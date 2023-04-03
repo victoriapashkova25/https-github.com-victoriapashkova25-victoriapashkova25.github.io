@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+      * {font-family: Arial, Helvetica, sans-serif; box-sizing: border-box;}
+      .container {width: 100%; margin: 0 auto;display: flex;justify-content: center;}
+      table {overflow-x: scroll;}
+      th, td { background-color: #f7f7f7; padding: 8px 16px; max-width: 200px;}
+      th { font-size: 12px;}
+      td:not(:first-child) {text-align: center;}
+      .bg-green{ background-color: rgba(29, 230, 29, 0.1); }
+      .percent-posiive {background-color: rgba(103, 149, 233, 0.1);}
+      .percent-posiive .percent {color: green;}
+      .critical-negative {background-color: rgba(255, 0, 0, 0.1);}
+      .percent-negative .percent, .critical-negative .percent {color: red;}
+      .percent {margin-left: 16px;}
+      .bg-white { background: white; }
+      .chart {display: flex; justify-content: center;}
+      .clickable-row tr:first-child {cursor: pointer;}
+      .clickable-row tr:not(:first-child) {display: none; font-size: 12px;color: gray;}
+      .d-table-row {display: table-row !important;}
+    </style>
+</head>
+<body>
+  <div class="container">
+    
+  <table>
+    <thead>
+      <tr>
+        <th>Показатель</th>
+        <th class="bg-green">Текущий день</th>
+        <th>Вчера</th>
+        <th>Неделю назад</th>
+      </tr>
+    </thead>
+    <tbody class='clickable-row'>
+      <tr>
+        <td>Выручка</td>
+        <td class="bg-green">500 521</td>
+        <td class="td-percent">480 521 <span class="percent">-4%</span></td>
+        <td class="td-percent">480 521 <span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="bg-white"><div id="revenue" class="chart"></div></td>
+      </tr>
+      <tr>
+        <td>Наличные</td>
+        <td class="bg-green">300 000</td>
+        <td class="td-percent">300 521 <span class="percent">-4%</span></td>
+        <td class="td-percent">300 521 <span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td>Безналичный расчет</td>
+        <td class="bg-green">100 521</td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td>Кредитные карты</td>
+        <td class="bg-green">100 521</td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+      </tr>
+    </tbody>
+    
+    <tbody class='clickable-row'>
+      <tr>
+        <td>Средний чек, руб</td>
+        <td class="bg-green">1300</td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="bg-white"><div id="check" class="chart"></div></td>
+      </tr>
+      <tr>
+        <td>Наличные</td>
+        <td class="bg-green">1300</td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+      </tr>
+      <tr>
+        <td>Безналичный расчет</td>
+        <td class="bg-green">1300</td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+      </tr>
+      <tr>
+        <td>Кредитные карты</td>
+        <td class="bg-green">1300</td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+        <td class="td-percent">900 <span class="percent">+44%</span></td>
+      </tr>
+    </tbody>
+
+    <tbody class='clickable-row'>
+      <tr>
+        <td>Средний гость, руб</td>
+        <td class="bg-green">1200</td>
+        <td class="td-percent">800 <span class="percent">+45%</span></td>
+        <td class="td-percent">400 <span class="percent">+45%</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="bg-white"><div id="guest" class="chart"></div></td>
+      </tr>
+      <tr>
+        <td>Наличные</td>
+        <td class="bg-green">1200</td>
+        <td class="td-percent">800 <span class="percent">+45%</span></td>
+        <td class="td-percent">400 <span class="percent">+45%</span></td>
+      </tr>
+      <tr>
+        <td>Безналичный расчет</td>
+        <td class="bg-green">1200</td>
+        <td class="td-percent">800 <span class="percent">+45%</span></td>
+        <td class="td-percent">400 <span class="percent">+45%</span></td>
+      </tr>
+      <tr>
+        <td>Кредитные карты</td>
+        <td class="bg-green">100 521</td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+      </tr>
+    </tbody>
+
+    <tbody class='clickable-row'>
+      <tr>
+        <td>Удаление из чека (после оплаты), руб</td>
+        <td class="bg-green">1000</td>
+        <td class="td-percent">1100 <span class="percent">-10%</span></td>
+        <td class="td-percent">900<span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="bg-white"><div id="delete" class="chart"></div></td>
+      </tr>
+      <tr>
+        <td>Наличные</td>
+        <td class="bg-green">1000</td>
+        <td class="td-percent">921 <span class="percent">-4%</span></td>
+        <td class="td-percent">921 <span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td>Безналичный расчет</td>
+        <td class="bg-green">1000</td>
+        <td class="td-percent">1000 <span class="percent">-4%</span></td>
+        <td class="td-percent">1000 <span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td>Кредитные карты</td>
+        <td class="bg-green">100 521</td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+        <td class="td-percent">100 521 <span class="percent">-4%</span></td>
+      </tr>
+    </tbody>
+
+    <tbody class='clickable-row'>
+      <tr>
+        <td>Количество чеков</td>
+        <td class="bg-green">36</td>
+        <td class="td-percent">34 <span class="percent">-4%</span></td>
+        <td class="td-percent">34 <span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="bg-white"><div id="deleteCheck" class="chart"></div></td>
+      </tr>
+    </tbody>
+    
+    <tbody class='clickable-row'>
+      <tr>
+        <td>Количество гостей</td>
+        <td class="bg-green">36</td>
+        <td class="td-percent">34 <span class="percent">-4%</span></td>
+        <td class="td-percent">34 <span class="percent">-4%</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="bg-white"><div id="deleteGuest" class="chart"></div></td>
+      </tr>
+    </tbody>
+
+  </table>
+
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+        Highcharts.chart('revenue',{
+            chart: { width: 400, height: 250},   
+            title : { text: null },   
+            legend: { enabled: false} ,
+            yAxis:  { title: { text: null }},  
+            credits: { enabled: false },
+            series: [{data: [0,3,2,2,7] }]
+            
+        });
+            
+        Highcharts.chart('check',{
+            chart: { width: 400, height: 250},  
+            title : { text: null },   
+            legend: { enabled: false} ,
+            yAxis:  { title: { text: null }},  
+            credits: { enabled: false },
+            series: [{data: [5,3,2,6,7] }]
+        });
+
+        Highcharts.chart('guest',{
+            chart: { width: 400, height: 250},  
+            title : { text: null },   
+            legend: { enabled: false} ,
+            yAxis:  { title: { text: null }},  
+            credits: { enabled: false },
+            series: [{data: [0,3,2,5,4] }]
+        });
+
+        Highcharts.chart('delete',{
+            chart: { width: 400, height: 250},  
+            title : { text: null },   
+            legend: { enabled: false} ,
+            yAxis:  { title: { text: null }},  
+            credits: { enabled: false },
+            series: [{data: [7,5,6,4,4] }]
+        });
+       
+        Highcharts.chart('deleteCheck',{
+            chart: { width: 400, height: 250},  
+            title : { text: null },   
+            legend: { enabled: false} ,
+            yAxis:  { title: { text: null }},  
+            credits: { enabled: false },
+            series: [{data: [7,5,6,4,4] }]
+        });
+
+        Highcharts.chart('deleteGuest',{
+            chart: { width: 400, height: 250},  
+            title : { text: null },   
+            legend: { enabled: false} ,
+            yAxis:  { title: { text: null }},  
+            credits: { enabled: false },
+            series: [{data: [7,5,6,4,4] }]
+        });
+        
+
+        $(function() {
+                
+          $(".clickable-row").click(function() {
+            $(this).children("tr").toggleClass('d-table-row');
+          });
+          
+          $(".td-percent").each(function(){
+              if ($(this).is(":contains('+')")) {
+                $(this).addClass('percent-posiive');
+              } else if ($(this).is(":contains('-')") && ($(this).children('.percent').text().replace(/\D/g, '') >= 10) ) {
+                $(this).addClass('critical-negative');
+              } else {
+                $(this).addClass('percent-negative');
+              }
+          });
+        });
+
+    </script>
+</body>
+</html>
