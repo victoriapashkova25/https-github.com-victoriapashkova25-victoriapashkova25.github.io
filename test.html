@@ -188,6 +188,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script>
+        $(function() {
+          $(".clickable-row").click(function() {
+            $(this).children("tr").toggleClass('d-table-row');
+          });
+          
+          $(".td-percent").each(function(){
+              if ($(this).is(":contains('+')")) {
+                $(this).addClass('percent-posiive');
+              } else if ($(this).is(":contains('-')") && ($(this).children('.percent').text().replace(/\D/g, '') >= 10) ) {
+                $(this).addClass('critical-negative');
+              } else {
+                $(this).addClass('percent-negative');
+              }
+          });
+        });
+
         Highcharts.chart('revenue',{
             chart: { width: 400, height: 250},   
             title : { text: null },   
@@ -242,25 +258,6 @@
             credits: { enabled: false },
             series: [{data: [7,5,6,4,4] }]
         });
-        
-
-        $(function() {
-                
-          $(".clickable-row").click(function() {
-            $(this).children("tr").toggleClass('d-table-row');
-          });
-          
-          $(".td-percent").each(function(){
-              if ($(this).is(":contains('+')")) {
-                $(this).addClass('percent-posiive');
-              } else if ($(this).is(":contains('-')") && ($(this).children('.percent').text().replace(/\D/g, '') >= 10) ) {
-                $(this).addClass('critical-negative');
-              } else {
-                $(this).addClass('percent-negative');
-              }
-          });
-        });
-
     </script>
 </body>
 </html>
