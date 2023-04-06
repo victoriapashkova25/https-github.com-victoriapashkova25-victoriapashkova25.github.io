@@ -70,7 +70,7 @@ $("#password-input").keyup(function() {
 	}
 
  	if(this.value.match(/[a-z]+/) && this.value.match(/[A-Z]+/)) {
-		$('.password-tooltip li:not(:last-child)').addClass('text-success');
+		$('.password-tooltip li:nth-child(2)').addClass('text-success');
 		strength++;
 	}
 
